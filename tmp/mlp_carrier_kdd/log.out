@@ -1,0 +1,3533 @@
+2022-10-24 15:06:52,951 - trainer - INFO - MLP(
+  (linears): ModuleList(
+    (0): Linear(in_features=1, out_features=128, bias=True)
+    (1): Linear(in_features=128, out_features=64, bias=True)
+    (2): Linear(in_features=64, out_features=32, bias=True)
+  )
+  (activation_layers): ModuleList(
+    (0): ReLU(inplace=True)
+    (1): ReLU(inplace=True)
+    (2): ReLU(inplace=True)
+  )
+  (dropout): Dropout(p=0.0, inplace=False)
+  (linear_output): Linear(in_features=32, out_features=1, bias=True)
+)
+2022-10-24 15:06:52,952 - trainer - INFO -   Total params: 10625
+2022-10-24 15:06:52,953 - trainer - INFO -   Trainable params: 10625
+2022-10-24 15:06:52,953 - trainer - INFO -   Non-trainable params: 0
+2022-10-24 15:06:52,954 - trainer - INFO -   There are 14  training examples
+2022-10-24 15:06:52,954 - trainer - INFO -   There are 14 examples for development
+2022-10-24 15:06:53,066 - trainer - INFO - start training epoch 1
+2022-10-24 15:06:53,066 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:53,067 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:53,067 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,297 - trainer - INFO - 
+*****************[epoch: 1, global step: 2] eval training set at end of epoch***************
+2022-10-24 15:06:54,297 - trainer - INFO - {
+  "train_loss": 558470.75
+}
+2022-10-24 15:06:54,299 - trainer - INFO - start training epoch 2
+2022-10-24 15:06:54,299 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,299 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,300 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,306 - trainer - INFO - 
+*****************[epoch: 2, global step: 2] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,307 - trainer - INFO - {
+  "train_loss": 551827.15625
+}
+2022-10-24 15:06:54,313 - trainer - INFO - 
+*****************[epoch: 2, global step: 2] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,314 - trainer - INFO - {
+  "dev_loss": 476755.8125,
+  "dev_best_score_for_loss": -476755.8125
+}
+2022-10-24 15:06:54,315 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:54,316 - trainer - INFO -    Check 0 checkpoints already saved
+2022-10-24 15:06:54,316 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,322 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,322 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:54,323 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,324 - trainer - INFO -    Check 0 checkpoints already saved
+2022-10-24 15:06:54,325 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_2
+2022-10-24 15:06:54,330 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_2
+2022-10-24 15:06:54,332 - trainer - INFO - 
+*****************[epoch: 2, global step: 3] eval training set at end of epoch***************
+2022-10-24 15:06:54,332 - trainer - INFO - {
+  "train_loss": 545183.5625
+}
+2022-10-24 15:06:54,333 - trainer - INFO - start training epoch 3
+2022-10-24 15:06:54,333 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,334 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,334 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,342 - trainer - INFO - 
+*****************[epoch: 3, global step: 4] eval training set at end of epoch***************
+2022-10-24 15:06:54,343 - trainer - INFO - {
+  "train_loss": 476755.8125
+}
+2022-10-24 15:06:54,343 - trainer - INFO - start training epoch 4
+2022-10-24 15:06:54,344 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,344 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,345 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,356 - trainer - INFO - 
+*****************[epoch: 4, global step: 4] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,357 - trainer - INFO - {
+  "train_loss": 393070.484375
+}
+2022-10-24 15:06:54,370 - trainer - INFO - 
+*****************[epoch: 4, global step: 4] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,371 - trainer - INFO - {
+  "dev_loss": 66375.4296875,
+  "dev_best_score_for_loss": -66375.4296875
+}
+2022-10-24 15:06:54,373 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:54,374 - trainer - INFO -    Check 1 checkpoints already saved
+2022-10-24 15:06:54,374 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,378 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,379 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:54,379 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,380 - trainer - INFO -    Check 1 checkpoints already saved
+2022-10-24 15:06:54,380 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_4
+2022-10-24 15:06:54,385 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_4
+2022-10-24 15:06:54,386 - trainer - INFO - 
+*****************[epoch: 4, global step: 5] eval training set at end of epoch***************
+2022-10-24 15:06:54,387 - trainer - INFO - {
+  "train_loss": 309385.15625
+}
+2022-10-24 15:06:54,387 - trainer - INFO - start training epoch 5
+2022-10-24 15:06:54,388 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,388 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,389 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,404 - trainer - INFO - 
+*****************[epoch: 5, global step: 6] eval training set at end of epoch***************
+2022-10-24 15:06:54,405 - trainer - INFO - {
+  "train_loss": 66375.4375
+}
+2022-10-24 15:06:54,407 - trainer - INFO - start training epoch 6
+2022-10-24 15:06:54,410 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,410 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,411 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,423 - trainer - INFO - 
+*****************[epoch: 6, global step: 6] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,424 - trainer - INFO - {
+  "train_loss": 137468.1015625
+}
+2022-10-24 15:06:54,432 - trainer - INFO - 
+*****************[epoch: 6, global step: 6] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,433 - trainer - INFO - {
+  "dev_loss": 95508.140625,
+  "dev_best_score_for_loss": -66375.4296875
+}
+2022-10-24 15:06:54,434 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:54,434 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,435 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:54,436 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_6
+2022-10-24 15:06:54,441 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_6
+2022-10-24 15:06:54,442 - trainer - INFO - 
+*****************[epoch: 6, global step: 7] eval training set at end of epoch***************
+2022-10-24 15:06:54,443 - trainer - INFO - {
+  "train_loss": 208560.765625
+}
+2022-10-24 15:06:54,443 - trainer - INFO - start training epoch 7
+2022-10-24 15:06:54,444 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,444 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,445 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,454 - trainer - INFO - 
+*****************[epoch: 7, global step: 8] eval training set at end of epoch***************
+2022-10-24 15:06:54,455 - trainer - INFO - {
+  "train_loss": 95508.1484375
+}
+2022-10-24 15:06:54,456 - trainer - INFO - start training epoch 8
+2022-10-24 15:06:54,457 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,457 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,458 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,465 - trainer - INFO - 
+*****************[epoch: 8, global step: 8] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,466 - trainer - INFO - {
+  "train_loss": 55770.3828125
+}
+2022-10-24 15:06:54,473 - trainer - INFO - 
+*****************[epoch: 8, global step: 8] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,473 - trainer - INFO - {
+  "dev_loss": 59510.4921875,
+  "dev_best_score_for_loss": -59510.4921875
+}
+2022-10-24 15:06:54,475 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:54,476 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,476 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,477 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_2
+2022-10-24 15:06:54,479 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,482 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,483 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:54,483 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,484 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:54,485 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_8
+2022-10-24 15:06:54,490 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_8
+2022-10-24 15:06:54,492 - trainer - INFO - 
+*****************[epoch: 8, global step: 9] eval training set at end of epoch***************
+2022-10-24 15:06:54,492 - trainer - INFO - {
+  "train_loss": 16032.6171875
+}
+2022-10-24 15:06:54,493 - trainer - INFO - start training epoch 9
+2022-10-24 15:06:54,494 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,494 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,495 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,505 - trainer - INFO - 
+*****************[epoch: 9, global step: 10] eval training set at end of epoch***************
+2022-10-24 15:06:54,505 - trainer - INFO - {
+  "train_loss": 59510.5
+}
+2022-10-24 15:06:54,506 - trainer - INFO - start training epoch 10
+2022-10-24 15:06:54,508 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,509 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,510 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,519 - trainer - INFO - 
+*****************[epoch: 10, global step: 10] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,520 - trainer - INFO - {
+  "train_loss": 80580.421875
+}
+2022-10-24 15:06:54,529 - trainer - INFO - 
+*****************[epoch: 10, global step: 10] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,529 - trainer - INFO - {
+  "dev_loss": 106374.2578125,
+  "dev_best_score_for_loss": -59510.4921875
+}
+2022-10-24 15:06:54,530 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:54,531 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,533 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,533 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,534 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_4
+2022-10-24 15:06:54,536 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_10
+2022-10-24 15:06:54,542 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_10
+2022-10-24 15:06:54,543 - trainer - INFO - 
+*****************[epoch: 10, global step: 11] eval training set at end of epoch***************
+2022-10-24 15:06:54,544 - trainer - INFO - {
+  "train_loss": 101650.34375
+}
+2022-10-24 15:06:54,545 - trainer - INFO - start training epoch 11
+2022-10-24 15:06:54,546 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,546 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,547 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,560 - trainer - INFO - 
+*****************[epoch: 11, global step: 12] eval training set at end of epoch***************
+2022-10-24 15:06:54,561 - trainer - INFO - {
+  "train_loss": 106374.2578125
+}
+2022-10-24 15:06:54,561 - trainer - INFO - start training epoch 12
+2022-10-24 15:06:54,562 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,564 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,565 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,575 - trainer - INFO - 
+*****************[epoch: 12, global step: 12] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,576 - trainer - INFO - {
+  "train_loss": 92780.34375
+}
+2022-10-24 15:06:54,584 - trainer - INFO - 
+*****************[epoch: 12, global step: 12] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,584 - trainer - INFO - {
+  "dev_loss": 38040.23828125,
+  "dev_best_score_for_loss": -38040.23828125
+}
+2022-10-24 15:06:54,585 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:54,586 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,587 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,587 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_6
+2022-10-24 15:06:54,589 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,592 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,594 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:54,595 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,597 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:54,598 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_12
+2022-10-24 15:06:54,603 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_12
+2022-10-24 15:06:54,604 - trainer - INFO - 
+*****************[epoch: 12, global step: 13] eval training set at end of epoch***************
+2022-10-24 15:06:54,604 - trainer - INFO - {
+  "train_loss": 79186.4296875
+}
+2022-10-24 15:06:54,605 - trainer - INFO - start training epoch 13
+2022-10-24 15:06:54,606 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,606 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,611 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,621 - trainer - INFO - 
+*****************[epoch: 13, global step: 14] eval training set at end of epoch***************
+2022-10-24 15:06:54,622 - trainer - INFO - {
+  "train_loss": 38040.23828125
+}
+2022-10-24 15:06:54,622 - trainer - INFO - start training epoch 14
+2022-10-24 15:06:54,625 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,627 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,627 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,636 - trainer - INFO - 
+*****************[epoch: 14, global step: 14] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,636 - trainer - INFO - {
+  "train_loss": 26519.4814453125
+}
+2022-10-24 15:06:54,644 - trainer - INFO - 
+*****************[epoch: 14, global step: 14] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,645 - trainer - INFO - {
+  "dev_loss": 39520.30078125,
+  "dev_best_score_for_loss": -38040.23828125
+}
+2022-10-24 15:06:54,645 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:54,646 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,647 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,647 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,648 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_8
+2022-10-24 15:06:54,650 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_14
+2022-10-24 15:06:54,654 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_14
+2022-10-24 15:06:54,656 - trainer - INFO - 
+*****************[epoch: 14, global step: 15] eval training set at end of epoch***************
+2022-10-24 15:06:54,657 - trainer - INFO - {
+  "train_loss": 14998.724609375
+}
+2022-10-24 15:06:54,658 - trainer - INFO - start training epoch 15
+2022-10-24 15:06:54,658 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,659 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,659 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,668 - trainer - INFO - 
+*****************[epoch: 15, global step: 16] eval training set at end of epoch***************
+2022-10-24 15:06:54,668 - trainer - INFO - {
+  "train_loss": 39520.3046875
+}
+2022-10-24 15:06:54,669 - trainer - INFO - start training epoch 16
+2022-10-24 15:06:54,669 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,670 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,671 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,684 - trainer - INFO - 
+*****************[epoch: 16, global step: 16] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,684 - trainer - INFO - {
+  "train_loss": 53799.4453125
+}
+2022-10-24 15:06:54,693 - trainer - INFO - 
+*****************[epoch: 16, global step: 16] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,694 - trainer - INFO - {
+  "dev_loss": 44391.14453125,
+  "dev_best_score_for_loss": -38040.23828125
+}
+2022-10-24 15:06:54,695 - trainer - INFO -   no_improve_count: 2
+2022-10-24 15:06:54,696 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,698 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,698 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,699 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_10
+2022-10-24 15:06:54,701 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_16
+2022-10-24 15:06:54,706 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_16
+2022-10-24 15:06:54,708 - trainer - INFO - 
+*****************[epoch: 16, global step: 17] eval training set at end of epoch***************
+2022-10-24 15:06:54,709 - trainer - INFO - {
+  "train_loss": 68078.5859375
+}
+2022-10-24 15:06:54,710 - trainer - INFO - start training epoch 17
+2022-10-24 15:06:54,711 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,711 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,712 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,722 - trainer - INFO - 
+*****************[epoch: 17, global step: 18] eval training set at end of epoch***************
+2022-10-24 15:06:54,722 - trainer - INFO - {
+  "train_loss": 44391.14453125
+}
+2022-10-24 15:06:54,723 - trainer - INFO - start training epoch 18
+2022-10-24 15:06:54,724 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,725 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,725 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,735 - trainer - INFO - 
+*****************[epoch: 18, global step: 18] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,736 - trainer - INFO - {
+  "train_loss": 30355.79931640625
+}
+2022-10-24 15:06:54,744 - trainer - INFO - 
+*****************[epoch: 18, global step: 18] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,744 - trainer - INFO - {
+  "dev_loss": 19185.62890625,
+  "dev_best_score_for_loss": -19185.62890625
+}
+2022-10-24 15:06:54,745 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:54,747 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,748 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,750 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_12
+2022-10-24 15:06:54,752 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,756 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,757 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:54,757 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,758 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:54,759 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_18
+2022-10-24 15:06:54,764 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_18
+2022-10-24 15:06:54,766 - trainer - INFO - 
+*****************[epoch: 18, global step: 19] eval training set at end of epoch***************
+2022-10-24 15:06:54,766 - trainer - INFO - {
+  "train_loss": 16320.4541015625
+}
+2022-10-24 15:06:54,767 - trainer - INFO - start training epoch 19
+2022-10-24 15:06:54,768 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,768 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,769 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,778 - trainer - INFO - 
+*****************[epoch: 19, global step: 20] eval training set at end of epoch***************
+2022-10-24 15:06:54,778 - trainer - INFO - {
+  "train_loss": 19185.62890625
+}
+2022-10-24 15:06:54,780 - trainer - INFO - start training epoch 20
+2022-10-24 15:06:54,780 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,781 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,781 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,790 - trainer - INFO - 
+*****************[epoch: 20, global step: 20] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,790 - trainer - INFO - {
+  "train_loss": 27372.509765625
+}
+2022-10-24 15:06:54,800 - trainer - INFO - 
+*****************[epoch: 20, global step: 20] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,801 - trainer - INFO - {
+  "dev_loss": 43934.71484375,
+  "dev_best_score_for_loss": -19185.62890625
+}
+2022-10-24 15:06:54,802 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:54,803 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,804 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,804 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,805 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_14
+2022-10-24 15:06:54,807 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_20
+2022-10-24 15:06:54,812 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_20
+2022-10-24 15:06:54,813 - trainer - INFO - 
+*****************[epoch: 20, global step: 21] eval training set at end of epoch***************
+2022-10-24 15:06:54,814 - trainer - INFO - {
+  "train_loss": 35559.390625
+}
+2022-10-24 15:06:54,814 - trainer - INFO - start training epoch 21
+2022-10-24 15:06:54,815 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,815 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,816 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,824 - trainer - INFO - 
+*****************[epoch: 21, global step: 22] eval training set at end of epoch***************
+2022-10-24 15:06:54,825 - trainer - INFO - {
+  "train_loss": 43934.7109375
+}
+2022-10-24 15:06:54,825 - trainer - INFO - start training epoch 22
+2022-10-24 15:06:54,827 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,827 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,828 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,836 - trainer - INFO - 
+*****************[epoch: 22, global step: 22] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,836 - trainer - INFO - {
+  "train_loss": 40839.58203125
+}
+2022-10-24 15:06:54,845 - trainer - INFO - 
+*****************[epoch: 22, global step: 22] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,847 - trainer - INFO - {
+  "dev_loss": 22838.9296875,
+  "dev_best_score_for_loss": -19185.62890625
+}
+2022-10-24 15:06:54,848 - trainer - INFO -   no_improve_count: 2
+2022-10-24 15:06:54,849 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,850 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,851 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,851 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_16
+2022-10-24 15:06:54,853 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_22
+2022-10-24 15:06:54,859 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_22
+2022-10-24 15:06:54,863 - trainer - INFO - 
+*****************[epoch: 22, global step: 23] eval training set at end of epoch***************
+2022-10-24 15:06:54,863 - trainer - INFO - {
+  "train_loss": 37744.453125
+}
+2022-10-24 15:06:54,864 - trainer - INFO - start training epoch 23
+2022-10-24 15:06:54,864 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,865 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,865 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,875 - trainer - INFO - 
+*****************[epoch: 23, global step: 24] eval training set at end of epoch***************
+2022-10-24 15:06:54,876 - trainer - INFO - {
+  "train_loss": 22838.927734375
+}
+2022-10-24 15:06:54,877 - trainer - INFO - start training epoch 24
+2022-10-24 15:06:54,878 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,878 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,879 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,887 - trainer - INFO - 
+*****************[epoch: 24, global step: 24] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,888 - trainer - INFO - {
+  "train_loss": 17868.11767578125
+}
+2022-10-24 15:06:54,898 - trainer - INFO - 
+*****************[epoch: 24, global step: 24] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,899 - trainer - INFO - {
+  "dev_loss": 18593.466796875,
+  "dev_best_score_for_loss": -18593.466796875
+}
+2022-10-24 15:06:54,900 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:54,902 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,902 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,907 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_18
+2022-10-24 15:06:54,910 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,913 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:54,914 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:54,914 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,916 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:54,916 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_24
+2022-10-24 15:06:54,920 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_24
+2022-10-24 15:06:54,921 - trainer - INFO - 
+*****************[epoch: 24, global step: 25] eval training set at end of epoch***************
+2022-10-24 15:06:54,922 - trainer - INFO - {
+  "train_loss": 12897.3076171875
+}
+2022-10-24 15:06:54,923 - trainer - INFO - start training epoch 25
+2022-10-24 15:06:54,923 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,923 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,924 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,932 - trainer - INFO - 
+*****************[epoch: 25, global step: 26] eval training set at end of epoch***************
+2022-10-24 15:06:54,933 - trainer - INFO - {
+  "train_loss": 18593.466796875
+}
+2022-10-24 15:06:54,934 - trainer - INFO - start training epoch 26
+2022-10-24 15:06:54,937 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,937 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,939 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,949 - trainer - INFO - 
+*****************[epoch: 26, global step: 26] eval training set based on eval_every=2***************
+2022-10-24 15:06:54,951 - trainer - INFO - {
+  "train_loss": 24200.8408203125
+}
+2022-10-24 15:06:54,960 - trainer - INFO - 
+*****************[epoch: 26, global step: 26] eval development set based on eval_every=2***************
+2022-10-24 15:06:54,961 - trainer - INFO - {
+  "dev_loss": 26560.076171875,
+  "dev_best_score_for_loss": -18593.466796875
+}
+2022-10-24 15:06:54,961 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:54,962 - trainer - INFO -   patience: 200
+2022-10-24 15:06:54,963 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:54,964 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:54,964 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_20
+2022-10-24 15:06:54,966 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_26
+2022-10-24 15:06:54,970 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_26
+2022-10-24 15:06:54,971 - trainer - INFO - 
+*****************[epoch: 26, global step: 27] eval training set at end of epoch***************
+2022-10-24 15:06:54,972 - trainer - INFO - {
+  "train_loss": 29808.21484375
+}
+2022-10-24 15:06:54,972 - trainer - INFO - start training epoch 27
+2022-10-24 15:06:54,973 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,973 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,976 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:54,985 - trainer - INFO - 
+*****************[epoch: 27, global step: 28] eval training set at end of epoch***************
+2022-10-24 15:06:54,986 - trainer - INFO - {
+  "train_loss": 26560.08203125
+}
+2022-10-24 15:06:54,987 - trainer - INFO - start training epoch 28
+2022-10-24 15:06:54,987 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:54,988 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:54,989 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,002 - trainer - INFO - 
+*****************[epoch: 28, global step: 28] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,002 - trainer - INFO - {
+  "train_loss": 20735.25244140625
+}
+2022-10-24 15:06:55,009 - trainer - INFO - 
+*****************[epoch: 28, global step: 28] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,010 - trainer - INFO - {
+  "dev_loss": 11869.029296875,
+  "dev_best_score_for_loss": -11869.029296875
+}
+2022-10-24 15:06:55,010 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,012 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,012 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,013 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_22
+2022-10-24 15:06:55,014 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,017 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,018 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,018 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,019 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,020 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_28
+2022-10-24 15:06:55,024 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_28
+2022-10-24 15:06:55,025 - trainer - INFO - 
+*****************[epoch: 28, global step: 29] eval training set at end of epoch***************
+2022-10-24 15:06:55,028 - trainer - INFO - {
+  "train_loss": 14910.4228515625
+}
+2022-10-24 15:06:55,029 - trainer - INFO - start training epoch 29
+2022-10-24 15:06:55,031 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,031 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,032 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,042 - trainer - INFO - 
+*****************[epoch: 29, global step: 30] eval training set at end of epoch***************
+2022-10-24 15:06:55,043 - trainer - INFO - {
+  "train_loss": 11869.0283203125
+}
+2022-10-24 15:06:55,044 - trainer - INFO - start training epoch 30
+2022-10-24 15:06:55,044 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,045 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,046 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,053 - trainer - INFO - 
+*****************[epoch: 30, global step: 30] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,053 - trainer - INFO - {
+  "train_loss": 14631.02978515625
+}
+2022-10-24 15:06:55,061 - trainer - INFO - 
+*****************[epoch: 30, global step: 30] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,062 - trainer - INFO - {
+  "dev_loss": 21853.4296875,
+  "dev_best_score_for_loss": -11869.029296875
+}
+2022-10-24 15:06:55,063 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:55,063 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,064 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,065 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,065 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_24
+2022-10-24 15:06:55,067 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_30
+2022-10-24 15:06:55,071 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_30
+2022-10-24 15:06:55,072 - trainer - INFO - 
+*****************[epoch: 30, global step: 31] eval training set at end of epoch***************
+2022-10-24 15:06:55,073 - trainer - INFO - {
+  "train_loss": 17393.03125
+}
+2022-10-24 15:06:55,074 - trainer - INFO - start training epoch 31
+2022-10-24 15:06:55,076 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,076 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,078 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,089 - trainer - INFO - 
+*****************[epoch: 31, global step: 32] eval training set at end of epoch***************
+2022-10-24 15:06:55,090 - trainer - INFO - {
+  "train_loss": 21853.431640625
+}
+2022-10-24 15:06:55,094 - trainer - INFO - start training epoch 32
+2022-10-24 15:06:55,095 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,095 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,096 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,104 - trainer - INFO - 
+*****************[epoch: 32, global step: 32] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,105 - trainer - INFO - {
+  "train_loss": 20849.53125
+}
+2022-10-24 15:06:55,112 - trainer - INFO - 
+*****************[epoch: 32, global step: 32] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,112 - trainer - INFO - {
+  "dev_loss": 13656.9111328125,
+  "dev_best_score_for_loss": -11869.029296875
+}
+2022-10-24 15:06:55,113 - trainer - INFO -   no_improve_count: 2
+2022-10-24 15:06:55,113 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,114 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,114 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,115 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_26
+2022-10-24 15:06:55,116 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_32
+2022-10-24 15:06:55,120 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_32
+2022-10-24 15:06:55,127 - trainer - INFO - 
+*****************[epoch: 32, global step: 33] eval training set at end of epoch***************
+2022-10-24 15:06:55,130 - trainer - INFO - {
+  "train_loss": 19845.630859375
+}
+2022-10-24 15:06:55,130 - trainer - INFO - start training epoch 33
+2022-10-24 15:06:55,131 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,131 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,132 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,141 - trainer - INFO - 
+*****************[epoch: 33, global step: 34] eval training set at end of epoch***************
+2022-10-24 15:06:55,142 - trainer - INFO - {
+  "train_loss": 13656.91015625
+}
+2022-10-24 15:06:55,142 - trainer - INFO - start training epoch 34
+2022-10-24 15:06:55,144 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,144 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,145 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,152 - trainer - INFO - 
+*****************[epoch: 34, global step: 34] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,152 - trainer - INFO - {
+  "train_loss": 11889.0166015625
+}
+2022-10-24 15:06:55,160 - trainer - INFO - 
+*****************[epoch: 34, global step: 34] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,160 - trainer - INFO - {
+  "dev_loss": 12948.58984375,
+  "dev_best_score_for_loss": -11869.029296875
+}
+2022-10-24 15:06:55,161 - trainer - INFO -   no_improve_count: 3
+2022-10-24 15:06:55,162 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,163 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,163 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,164 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_28
+2022-10-24 15:06:55,165 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_34
+2022-10-24 15:06:55,169 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_34
+2022-10-24 15:06:55,172 - trainer - INFO - 
+*****************[epoch: 34, global step: 35] eval training set at end of epoch***************
+2022-10-24 15:06:55,172 - trainer - INFO - {
+  "train_loss": 10121.123046875
+}
+2022-10-24 15:06:55,173 - trainer - INFO - start training epoch 35
+2022-10-24 15:06:55,174 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,174 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,175 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,185 - trainer - INFO - 
+*****************[epoch: 35, global step: 36] eval training set at end of epoch***************
+2022-10-24 15:06:55,186 - trainer - INFO - {
+  "train_loss": 12948.58984375
+}
+2022-10-24 15:06:55,186 - trainer - INFO - start training epoch 36
+2022-10-24 15:06:55,187 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,187 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,188 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,201 - trainer - INFO - 
+*****************[epoch: 36, global step: 36] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,201 - trainer - INFO - {
+  "train_loss": 14716.7421875
+}
+2022-10-24 15:06:55,209 - trainer - INFO - 
+*****************[epoch: 36, global step: 36] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,209 - trainer - INFO - {
+  "dev_loss": 14112.013671875,
+  "dev_best_score_for_loss": -11869.029296875
+}
+2022-10-24 15:06:55,210 - trainer - INFO -   no_improve_count: 4
+2022-10-24 15:06:55,211 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,212 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,212 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,213 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_30
+2022-10-24 15:06:55,215 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_36
+2022-10-24 15:06:55,221 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_36
+2022-10-24 15:06:55,223 - trainer - INFO - 
+*****************[epoch: 36, global step: 37] eval training set at end of epoch***************
+2022-10-24 15:06:55,223 - trainer - INFO - {
+  "train_loss": 16484.89453125
+}
+2022-10-24 15:06:55,229 - trainer - INFO - start training epoch 37
+2022-10-24 15:06:55,230 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,231 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,233 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,244 - trainer - INFO - 
+*****************[epoch: 37, global step: 38] eval training set at end of epoch***************
+2022-10-24 15:06:55,245 - trainer - INFO - {
+  "train_loss": 14112.013671875
+}
+2022-10-24 15:06:55,246 - trainer - INFO - start training epoch 38
+2022-10-24 15:06:55,247 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,249 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,249 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,258 - trainer - INFO - 
+*****************[epoch: 38, global step: 38] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,259 - trainer - INFO - {
+  "train_loss": 11907.36083984375
+}
+2022-10-24 15:06:55,267 - trainer - INFO - 
+*****************[epoch: 38, global step: 38] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,268 - trainer - INFO - {
+  "dev_loss": 9325.7978515625,
+  "dev_best_score_for_loss": -9325.7978515625
+}
+2022-10-24 15:06:55,268 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,270 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,270 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,270 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_32
+2022-10-24 15:06:55,272 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,277 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,279 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,279 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,281 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,281 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_38
+2022-10-24 15:06:55,286 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_38
+2022-10-24 15:06:55,287 - trainer - INFO - 
+*****************[epoch: 38, global step: 39] eval training set at end of epoch***************
+2022-10-24 15:06:55,287 - trainer - INFO - {
+  "train_loss": 9702.7080078125
+}
+2022-10-24 15:06:55,288 - trainer - INFO - start training epoch 39
+2022-10-24 15:06:55,288 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,288 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,289 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,303 - trainer - INFO - 
+*****************[epoch: 39, global step: 40] eval training set at end of epoch***************
+2022-10-24 15:06:55,303 - trainer - INFO - {
+  "train_loss": 9325.7978515625
+}
+2022-10-24 15:06:55,305 - trainer - INFO - start training epoch 40
+2022-10-24 15:06:55,308 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,309 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,313 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,323 - trainer - INFO - 
+*****************[epoch: 40, global step: 40] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,324 - trainer - INFO - {
+  "train_loss": 10537.28515625
+}
+2022-10-24 15:06:55,334 - trainer - INFO - 
+*****************[epoch: 40, global step: 40] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,336 - trainer - INFO - {
+  "dev_loss": 12546.8037109375,
+  "dev_best_score_for_loss": -9325.7978515625
+}
+2022-10-24 15:06:55,337 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:55,338 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,341 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,345 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,348 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_34
+2022-10-24 15:06:55,351 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_40
+2022-10-24 15:06:55,357 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_40
+2022-10-24 15:06:55,362 - trainer - INFO - 
+*****************[epoch: 40, global step: 41] eval training set at end of epoch***************
+2022-10-24 15:06:55,364 - trainer - INFO - {
+  "train_loss": 11748.7724609375
+}
+2022-10-24 15:06:55,366 - trainer - INFO - start training epoch 41
+2022-10-24 15:06:55,366 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,367 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,369 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,382 - trainer - INFO - 
+*****************[epoch: 41, global step: 42] eval training set at end of epoch***************
+2022-10-24 15:06:55,382 - trainer - INFO - {
+  "train_loss": 12546.8037109375
+}
+2022-10-24 15:06:55,383 - trainer - INFO - start training epoch 42
+2022-10-24 15:06:55,385 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,386 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,387 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,402 - trainer - INFO - 
+*****************[epoch: 42, global step: 42] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,403 - trainer - INFO - {
+  "train_loss": 11462.5791015625
+}
+2022-10-24 15:06:55,420 - trainer - INFO - 
+*****************[epoch: 42, global step: 42] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,421 - trainer - INFO - {
+  "dev_loss": 7911.26708984375,
+  "dev_best_score_for_loss": -7911.26708984375
+}
+2022-10-24 15:06:55,423 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,428 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,430 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,433 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_36
+2022-10-24 15:06:55,436 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,441 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,442 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,442 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,444 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,444 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_42
+2022-10-24 15:06:55,449 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_42
+2022-10-24 15:06:55,450 - trainer - INFO - 
+*****************[epoch: 42, global step: 43] eval training set at end of epoch***************
+2022-10-24 15:06:55,451 - trainer - INFO - {
+  "train_loss": 10378.3544921875
+}
+2022-10-24 15:06:55,452 - trainer - INFO - start training epoch 43
+2022-10-24 15:06:55,453 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,454 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,455 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,471 - trainer - INFO - 
+*****************[epoch: 43, global step: 44] eval training set at end of epoch***************
+2022-10-24 15:06:55,472 - trainer - INFO - {
+  "train_loss": 7911.26611328125
+}
+2022-10-24 15:06:55,473 - trainer - INFO - start training epoch 44
+2022-10-24 15:06:55,477 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,478 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,480 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,495 - trainer - INFO - 
+*****************[epoch: 44, global step: 44] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,495 - trainer - INFO - {
+  "train_loss": 7998.690185546875
+}
+2022-10-24 15:06:55,507 - trainer - INFO - 
+*****************[epoch: 44, global step: 44] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,509 - trainer - INFO - {
+  "dev_loss": 9706.201171875,
+  "dev_best_score_for_loss": -7911.26708984375
+}
+2022-10-24 15:06:55,511 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:55,512 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,513 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,513 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,514 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_38
+2022-10-24 15:06:55,516 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_44
+2022-10-24 15:06:55,519 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_44
+2022-10-24 15:06:55,521 - trainer - INFO - 
+*****************[epoch: 44, global step: 45] eval training set at end of epoch***************
+2022-10-24 15:06:55,522 - trainer - INFO - {
+  "train_loss": 8086.1142578125
+}
+2022-10-24 15:06:55,529 - trainer - INFO - start training epoch 45
+2022-10-24 15:06:55,529 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,531 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,531 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,543 - trainer - INFO - 
+*****************[epoch: 45, global step: 46] eval training set at end of epoch***************
+2022-10-24 15:06:55,544 - trainer - INFO - {
+  "train_loss": 9706.201171875
+}
+2022-10-24 15:06:55,545 - trainer - INFO - start training epoch 46
+2022-10-24 15:06:55,546 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,546 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,547 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,556 - trainer - INFO - 
+*****************[epoch: 46, global step: 46] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,557 - trainer - INFO - {
+  "train_loss": 9487.92626953125
+}
+2022-10-24 15:06:55,565 - trainer - INFO - 
+*****************[epoch: 46, global step: 46] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,567 - trainer - INFO - {
+  "dev_loss": 7189.5205078125,
+  "dev_best_score_for_loss": -7189.5205078125
+}
+2022-10-24 15:06:55,569 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,570 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,571 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,573 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_40
+2022-10-24 15:06:55,575 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,581 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,581 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,581 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,583 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,584 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_46
+2022-10-24 15:06:55,590 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_46
+2022-10-24 15:06:55,591 - trainer - INFO - 
+*****************[epoch: 46, global step: 47] eval training set at end of epoch***************
+2022-10-24 15:06:55,592 - trainer - INFO - {
+  "train_loss": 9269.6513671875
+}
+2022-10-24 15:06:55,594 - trainer - INFO - start training epoch 47
+2022-10-24 15:06:55,595 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,595 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,596 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,610 - trainer - INFO - 
+*****************[epoch: 47, global step: 48] eval training set at end of epoch***************
+2022-10-24 15:06:55,610 - trainer - INFO - {
+  "train_loss": 7189.52001953125
+}
+2022-10-24 15:06:55,611 - trainer - INFO - start training epoch 48
+2022-10-24 15:06:55,612 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,613 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,614 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,627 - trainer - INFO - 
+*****************[epoch: 48, global step: 48] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,627 - trainer - INFO - {
+  "train_loss": 6846.51513671875
+}
+2022-10-24 15:06:55,639 - trainer - INFO - 
+*****************[epoch: 48, global step: 48] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,640 - trainer - INFO - {
+  "dev_loss": 7382.34619140625,
+  "dev_best_score_for_loss": -7189.5205078125
+}
+2022-10-24 15:06:55,641 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:55,642 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,646 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,646 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,646 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_42
+2022-10-24 15:06:55,650 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_48
+2022-10-24 15:06:55,654 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_48
+2022-10-24 15:06:55,656 - trainer - INFO - 
+*****************[epoch: 48, global step: 49] eval training set at end of epoch***************
+2022-10-24 15:06:55,657 - trainer - INFO - {
+  "train_loss": 6503.51025390625
+}
+2022-10-24 15:06:55,661 - trainer - INFO - start training epoch 49
+2022-10-24 15:06:55,661 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,661 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,662 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,671 - trainer - INFO - 
+*****************[epoch: 49, global step: 50] eval training set at end of epoch***************
+2022-10-24 15:06:55,671 - trainer - INFO - {
+  "train_loss": 7382.34619140625
+}
+2022-10-24 15:06:55,672 - trainer - INFO - start training epoch 50
+2022-10-24 15:06:55,673 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,674 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,674 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,681 - trainer - INFO - 
+*****************[epoch: 50, global step: 50] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,681 - trainer - INFO - {
+  "train_loss": 7522.265625
+}
+2022-10-24 15:06:55,688 - trainer - INFO - 
+*****************[epoch: 50, global step: 50] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,688 - trainer - INFO - {
+  "dev_loss": 6519.42333984375,
+  "dev_best_score_for_loss": -6519.42333984375
+}
+2022-10-24 15:06:55,691 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,693 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,694 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,694 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_44
+2022-10-24 15:06:55,696 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,699 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,700 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,700 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,701 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,701 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_50
+2022-10-24 15:06:55,706 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_50
+2022-10-24 15:06:55,709 - trainer - INFO - 
+*****************[epoch: 50, global step: 51] eval training set at end of epoch***************
+2022-10-24 15:06:55,710 - trainer - INFO - {
+  "train_loss": 7662.18505859375
+}
+2022-10-24 15:06:55,711 - trainer - INFO - start training epoch 51
+2022-10-24 15:06:55,712 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,712 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,713 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,723 - trainer - INFO - 
+*****************[epoch: 51, global step: 52] eval training set at end of epoch***************
+2022-10-24 15:06:55,723 - trainer - INFO - {
+  "train_loss": 6519.423828125
+}
+2022-10-24 15:06:55,724 - trainer - INFO - start training epoch 52
+2022-10-24 15:06:55,726 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,727 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,728 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,735 - trainer - INFO - 
+*****************[epoch: 52, global step: 52] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,736 - trainer - INFO - {
+  "train_loss": 5954.16552734375
+}
+2022-10-24 15:06:55,744 - trainer - INFO - 
+*****************[epoch: 52, global step: 52] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,744 - trainer - INFO - {
+  "dev_loss": 5560.58447265625,
+  "dev_best_score_for_loss": -5560.58447265625
+}
+2022-10-24 15:06:55,745 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,746 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,746 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,747 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_46
+2022-10-24 15:06:55,748 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,751 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,751 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,752 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,753 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,753 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_52
+2022-10-24 15:06:55,759 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_52
+2022-10-24 15:06:55,763 - trainer - INFO - 
+*****************[epoch: 52, global step: 53] eval training set at end of epoch***************
+2022-10-24 15:06:55,763 - trainer - INFO - {
+  "train_loss": 5388.9072265625
+}
+2022-10-24 15:06:55,764 - trainer - INFO - start training epoch 53
+2022-10-24 15:06:55,765 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,766 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,766 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,785 - trainer - INFO - 
+*****************[epoch: 53, global step: 54] eval training set at end of epoch***************
+2022-10-24 15:06:55,785 - trainer - INFO - {
+  "train_loss": 5560.58447265625
+}
+2022-10-24 15:06:55,786 - trainer - INFO - start training epoch 54
+2022-10-24 15:06:55,788 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,788 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,789 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,800 - trainer - INFO - 
+*****************[epoch: 54, global step: 54] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,801 - trainer - INFO - {
+  "train_loss": 5795.331787109375
+}
+2022-10-24 15:06:55,810 - trainer - INFO - 
+*****************[epoch: 54, global step: 54] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,811 - trainer - INFO - {
+  "dev_loss": 5380.970703125,
+  "dev_best_score_for_loss": -5380.970703125
+}
+2022-10-24 15:06:55,812 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,814 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,814 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,815 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_48
+2022-10-24 15:06:55,817 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,822 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,823 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,823 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,825 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,826 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_54
+2022-10-24 15:06:55,830 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_54
+2022-10-24 15:06:55,831 - trainer - INFO - 
+*****************[epoch: 54, global step: 55] eval training set at end of epoch***************
+2022-10-24 15:06:55,832 - trainer - INFO - {
+  "train_loss": 6030.0791015625
+}
+2022-10-24 15:06:55,832 - trainer - INFO - start training epoch 55
+2022-10-24 15:06:55,835 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,836 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,837 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,850 - trainer - INFO - 
+*****************[epoch: 55, global step: 56] eval training set at end of epoch***************
+2022-10-24 15:06:55,851 - trainer - INFO - {
+  "train_loss": 5380.970703125
+}
+2022-10-24 15:06:55,851 - trainer - INFO - start training epoch 56
+2022-10-24 15:06:55,852 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,852 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,853 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,861 - trainer - INFO - 
+*****************[epoch: 56, global step: 56] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,861 - trainer - INFO - {
+  "train_loss": 4897.1318359375
+}
+2022-10-24 15:06:55,869 - trainer - INFO - 
+*****************[epoch: 56, global step: 56] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,869 - trainer - INFO - {
+  "dev_loss": 4344.55615234375,
+  "dev_best_score_for_loss": -4344.55615234375
+}
+2022-10-24 15:06:55,870 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,871 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,871 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,872 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_50
+2022-10-24 15:06:55,873 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,877 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,878 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,878 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,879 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,879 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_56
+2022-10-24 15:06:55,884 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_56
+2022-10-24 15:06:55,885 - trainer - INFO - 
+*****************[epoch: 56, global step: 57] eval training set at end of epoch***************
+2022-10-24 15:06:55,885 - trainer - INFO - {
+  "train_loss": 4413.29296875
+}
+2022-10-24 15:06:55,886 - trainer - INFO - start training epoch 57
+2022-10-24 15:06:55,887 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,887 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,888 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,902 - trainer - INFO - 
+*****************[epoch: 57, global step: 58] eval training set at end of epoch***************
+2022-10-24 15:06:55,902 - trainer - INFO - {
+  "train_loss": 4344.5556640625
+}
+2022-10-24 15:06:55,903 - trainer - INFO - start training epoch 58
+2022-10-24 15:06:55,903 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,904 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,904 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,913 - trainer - INFO - 
+*****************[epoch: 58, global step: 58] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,914 - trainer - INFO - {
+  "train_loss": 4485.79443359375
+}
+2022-10-24 15:06:55,920 - trainer - INFO - 
+*****************[epoch: 58, global step: 58] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,920 - trainer - INFO - {
+  "dev_loss": 4255.93701171875,
+  "dev_best_score_for_loss": -4255.93701171875
+}
+2022-10-24 15:06:55,921 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,923 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,923 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,927 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_52
+2022-10-24 15:06:55,929 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,932 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,932 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,932 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,933 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,934 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_58
+2022-10-24 15:06:55,937 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_58
+2022-10-24 15:06:55,938 - trainer - INFO - 
+*****************[epoch: 58, global step: 59] eval training set at end of epoch***************
+2022-10-24 15:06:55,939 - trainer - INFO - {
+  "train_loss": 4627.033203125
+}
+2022-10-24 15:06:55,939 - trainer - INFO - start training epoch 59
+2022-10-24 15:06:55,940 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,943 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,944 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,952 - trainer - INFO - 
+*****************[epoch: 59, global step: 60] eval training set at end of epoch***************
+2022-10-24 15:06:55,953 - trainer - INFO - {
+  "train_loss": 4255.93701171875
+}
+2022-10-24 15:06:55,953 - trainer - INFO - start training epoch 60
+2022-10-24 15:06:55,954 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,954 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,955 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:55,967 - trainer - INFO - 
+*****************[epoch: 60, global step: 60] eval training set based on eval_every=2***************
+2022-10-24 15:06:55,967 - trainer - INFO - {
+  "train_loss": 3878.1181640625
+}
+2022-10-24 15:06:55,974 - trainer - INFO - 
+*****************[epoch: 60, global step: 60] eval development set based on eval_every=2***************
+2022-10-24 15:06:55,974 - trainer - INFO - {
+  "dev_loss": 3275.716552734375,
+  "dev_best_score_for_loss": -3275.716552734375
+}
+2022-10-24 15:06:55,975 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:55,976 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:55,976 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:55,977 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_54
+2022-10-24 15:06:55,978 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,981 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:55,981 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:55,981 - trainer - INFO -   patience: 200
+2022-10-24 15:06:55,982 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:55,982 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_60
+2022-10-24 15:06:55,986 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_60
+2022-10-24 15:06:55,987 - trainer - INFO - 
+*****************[epoch: 60, global step: 61] eval training set at end of epoch***************
+2022-10-24 15:06:55,987 - trainer - INFO - {
+  "train_loss": 3500.29931640625
+}
+2022-10-24 15:06:55,992 - trainer - INFO - start training epoch 61
+2022-10-24 15:06:55,993 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:55,997 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:55,997 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,007 - trainer - INFO - 
+*****************[epoch: 61, global step: 62] eval training set at end of epoch***************
+2022-10-24 15:06:56,008 - trainer - INFO - {
+  "train_loss": 3275.716552734375
+}
+2022-10-24 15:06:56,009 - trainer - INFO - start training epoch 62
+2022-10-24 15:06:56,010 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,011 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,011 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,018 - trainer - INFO - 
+*****************[epoch: 62, global step: 62] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,018 - trainer - INFO - {
+  "train_loss": 3357.8363037109375
+}
+2022-10-24 15:06:56,025 - trainer - INFO - 
+*****************[epoch: 62, global step: 62] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,026 - trainer - INFO - {
+  "dev_loss": 3145.821044921875,
+  "dev_best_score_for_loss": -3145.821044921875
+}
+2022-10-24 15:06:56,027 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,028 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,028 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,028 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_56
+2022-10-24 15:06:56,030 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,033 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,033 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,034 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,035 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,037 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_62
+2022-10-24 15:06:56,041 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_62
+2022-10-24 15:06:56,044 - trainer - INFO - 
+*****************[epoch: 62, global step: 63] eval training set at end of epoch***************
+2022-10-24 15:06:56,045 - trainer - INFO - {
+  "train_loss": 3439.9560546875
+}
+2022-10-24 15:06:56,046 - trainer - INFO - start training epoch 63
+2022-10-24 15:06:56,046 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,047 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,047 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,057 - trainer - INFO - 
+*****************[epoch: 63, global step: 64] eval training set at end of epoch***************
+2022-10-24 15:06:56,057 - trainer - INFO - {
+  "train_loss": 3145.821044921875
+}
+2022-10-24 15:06:56,059 - trainer - INFO - start training epoch 64
+2022-10-24 15:06:56,059 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,060 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,060 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,068 - trainer - INFO - 
+*****************[epoch: 64, global step: 64] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,068 - trainer - INFO - {
+  "train_loss": 2857.571044921875
+}
+2022-10-24 15:06:56,075 - trainer - INFO - 
+*****************[epoch: 64, global step: 64] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,076 - trainer - INFO - {
+  "dev_loss": 2413.453125,
+  "dev_best_score_for_loss": -2413.453125
+}
+2022-10-24 15:06:56,076 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,078 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,078 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,078 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_58
+2022-10-24 15:06:56,080 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,084 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,087 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,087 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,088 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,089 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_64
+2022-10-24 15:06:56,095 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_64
+2022-10-24 15:06:56,096 - trainer - INFO - 
+*****************[epoch: 64, global step: 65] eval training set at end of epoch***************
+2022-10-24 15:06:56,097 - trainer - INFO - {
+  "train_loss": 2569.321044921875
+}
+2022-10-24 15:06:56,098 - trainer - INFO - start training epoch 65
+2022-10-24 15:06:56,099 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,099 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,100 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,108 - trainer - INFO - 
+*****************[epoch: 65, global step: 66] eval training set at end of epoch***************
+2022-10-24 15:06:56,109 - trainer - INFO - {
+  "train_loss": 2413.453125
+}
+2022-10-24 15:06:56,110 - trainer - INFO - start training epoch 66
+2022-10-24 15:06:56,110 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,111 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,111 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,121 - trainer - INFO - 
+*****************[epoch: 66, global step: 66] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,121 - trainer - INFO - {
+  "train_loss": 2443.7410888671875
+}
+2022-10-24 15:06:56,130 - trainer - INFO - 
+*****************[epoch: 66, global step: 66] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,131 - trainer - INFO - {
+  "dev_loss": 2196.37646484375,
+  "dev_best_score_for_loss": -2196.37646484375
+}
+2022-10-24 15:06:56,131 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,133 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,133 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,133 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_60
+2022-10-24 15:06:56,135 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,138 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,138 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,139 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,140 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,140 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_66
+2022-10-24 15:06:56,145 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_66
+2022-10-24 15:06:56,146 - trainer - INFO - 
+*****************[epoch: 66, global step: 67] eval training set at end of epoch***************
+2022-10-24 15:06:56,147 - trainer - INFO - {
+  "train_loss": 2474.029052734375
+}
+2022-10-24 15:06:56,147 - trainer - INFO - start training epoch 67
+2022-10-24 15:06:56,148 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,148 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,149 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,157 - trainer - INFO - 
+*****************[epoch: 67, global step: 68] eval training set at end of epoch***************
+2022-10-24 15:06:56,157 - trainer - INFO - {
+  "train_loss": 2196.37646484375
+}
+2022-10-24 15:06:56,158 - trainer - INFO - start training epoch 68
+2022-10-24 15:06:56,160 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,161 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,162 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,172 - trainer - INFO - 
+*****************[epoch: 68, global step: 68] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,173 - trainer - INFO - {
+  "train_loss": 1981.1619262695312
+}
+2022-10-24 15:06:56,183 - trainer - INFO - 
+*****************[epoch: 68, global step: 68] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,184 - trainer - INFO - {
+  "dev_loss": 1652.5657958984375,
+  "dev_best_score_for_loss": -1652.5657958984375
+}
+2022-10-24 15:06:56,185 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,186 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,186 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,187 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_62
+2022-10-24 15:06:56,188 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,192 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,192 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,192 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,194 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,194 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_68
+2022-10-24 15:06:56,198 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_68
+2022-10-24 15:06:56,199 - trainer - INFO - 
+*****************[epoch: 68, global step: 69] eval training set at end of epoch***************
+2022-10-24 15:06:56,199 - trainer - INFO - {
+  "train_loss": 1765.9473876953125
+}
+2022-10-24 15:06:56,200 - trainer - INFO - start training epoch 69
+2022-10-24 15:06:56,201 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,201 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,202 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,211 - trainer - INFO - 
+*****************[epoch: 69, global step: 70] eval training set at end of epoch***************
+2022-10-24 15:06:56,212 - trainer - INFO - {
+  "train_loss": 1652.56591796875
+}
+2022-10-24 15:06:56,212 - trainer - INFO - start training epoch 70
+2022-10-24 15:06:56,213 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,214 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,214 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,223 - trainer - INFO - 
+*****************[epoch: 70, global step: 70] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,224 - trainer - INFO - {
+  "train_loss": 1652.7390747070312
+}
+2022-10-24 15:06:56,232 - trainer - INFO - 
+*****************[epoch: 70, global step: 70] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,232 - trainer - INFO - {
+  "dev_loss": 1373.336181640625,
+  "dev_best_score_for_loss": -1373.336181640625
+}
+2022-10-24 15:06:56,233 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,235 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,235 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,236 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_64
+2022-10-24 15:06:56,241 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,248 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,249 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,249 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,250 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,250 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_70
+2022-10-24 15:06:56,257 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_70
+2022-10-24 15:06:56,258 - trainer - INFO - 
+*****************[epoch: 70, global step: 71] eval training set at end of epoch***************
+2022-10-24 15:06:56,259 - trainer - INFO - {
+  "train_loss": 1652.9122314453125
+}
+2022-10-24 15:06:56,260 - trainer - INFO - start training epoch 71
+2022-10-24 15:06:56,260 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,261 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,262 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,273 - trainer - INFO - 
+*****************[epoch: 71, global step: 72] eval training set at end of epoch***************
+2022-10-24 15:06:56,274 - trainer - INFO - {
+  "train_loss": 1373.3360595703125
+}
+2022-10-24 15:06:56,276 - trainer - INFO - start training epoch 72
+2022-10-24 15:06:56,276 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,277 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,277 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,286 - trainer - INFO - 
+*****************[epoch: 72, global step: 72] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,286 - trainer - INFO - {
+  "train_loss": 1229.968017578125
+}
+2022-10-24 15:06:56,295 - trainer - INFO - 
+*****************[epoch: 72, global step: 72] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,297 - trainer - INFO - {
+  "dev_loss": 1132.331787109375,
+  "dev_best_score_for_loss": -1132.331787109375
+}
+2022-10-24 15:06:56,299 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,300 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,301 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,301 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_66
+2022-10-24 15:06:56,303 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,307 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,308 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,308 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,309 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,309 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_72
+2022-10-24 15:06:56,313 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_72
+2022-10-24 15:06:56,315 - trainer - INFO - 
+*****************[epoch: 72, global step: 73] eval training set at end of epoch***************
+2022-10-24 15:06:56,316 - trainer - INFO - {
+  "train_loss": 1086.5999755859375
+}
+2022-10-24 15:06:56,319 - trainer - INFO - start training epoch 73
+2022-10-24 15:06:56,320 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,320 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,321 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,332 - trainer - INFO - 
+*****************[epoch: 73, global step: 74] eval training set at end of epoch***************
+2022-10-24 15:06:56,333 - trainer - INFO - {
+  "train_loss": 1132.331787109375
+}
+2022-10-24 15:06:56,333 - trainer - INFO - start training epoch 74
+2022-10-24 15:06:56,334 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,334 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,335 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,342 - trainer - INFO - 
+*****************[epoch: 74, global step: 74] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,343 - trainer - INFO - {
+  "train_loss": 1034.8145141601562
+}
+2022-10-24 15:06:56,351 - trainer - INFO - 
+*****************[epoch: 74, global step: 74] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,351 - trainer - INFO - {
+  "dev_loss": 712.3089599609375,
+  "dev_best_score_for_loss": -712.3089599609375
+}
+2022-10-24 15:06:56,352 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,354 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,354 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,354 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_68
+2022-10-24 15:06:56,356 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,359 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,360 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,361 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,362 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,363 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_74
+2022-10-24 15:06:56,368 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_74
+2022-10-24 15:06:56,369 - trainer - INFO - 
+*****************[epoch: 74, global step: 75] eval training set at end of epoch***************
+2022-10-24 15:06:56,369 - trainer - INFO - {
+  "train_loss": 937.2972412109375
+}
+2022-10-24 15:06:56,369 - trainer - INFO - start training epoch 75
+2022-10-24 15:06:56,370 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,370 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,370 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,377 - trainer - INFO - 
+*****************[epoch: 75, global step: 76] eval training set at end of epoch***************
+2022-10-24 15:06:56,378 - trainer - INFO - {
+  "train_loss": 712.3089599609375
+}
+2022-10-24 15:06:56,378 - trainer - INFO - start training epoch 76
+2022-10-24 15:06:56,378 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,379 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,379 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,385 - trainer - INFO - 
+*****************[epoch: 76, global step: 76] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,385 - trainer - INFO - {
+  "train_loss": 660.6025390625
+}
+2022-10-24 15:06:56,392 - trainer - INFO - 
+*****************[epoch: 76, global step: 76] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,393 - trainer - INFO - {
+  "dev_loss": 582.781005859375,
+  "dev_best_score_for_loss": -582.781005859375
+}
+2022-10-24 15:06:56,394 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,396 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,398 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,398 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_70
+2022-10-24 15:06:56,400 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,403 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,403 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,404 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,404 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,405 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_76
+2022-10-24 15:06:56,410 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_76
+2022-10-24 15:06:56,411 - trainer - INFO - 
+*****************[epoch: 76, global step: 77] eval training set at end of epoch***************
+2022-10-24 15:06:56,411 - trainer - INFO - {
+  "train_loss": 608.8961181640625
+}
+2022-10-24 15:06:56,411 - trainer - INFO - start training epoch 77
+2022-10-24 15:06:56,412 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,412 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,412 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,419 - trainer - INFO - 
+*****************[epoch: 77, global step: 78] eval training set at end of epoch***************
+2022-10-24 15:06:56,419 - trainer - INFO - {
+  "train_loss": 582.7810668945312
+}
+2022-10-24 15:06:56,420 - trainer - INFO - start training epoch 78
+2022-10-24 15:06:56,420 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,420 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,421 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,430 - trainer - INFO - 
+*****************[epoch: 78, global step: 78] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,430 - trainer - INFO - {
+  "train_loss": 514.4306640625
+}
+2022-10-24 15:06:56,436 - trainer - INFO - 
+*****************[epoch: 78, global step: 78] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,436 - trainer - INFO - {
+  "dev_loss": 316.4659423828125,
+  "dev_best_score_for_loss": -316.4659423828125
+}
+2022-10-24 15:06:56,437 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,438 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,438 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,439 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_72
+2022-10-24 15:06:56,440 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,446 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,447 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,447 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,448 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,448 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_78
+2022-10-24 15:06:56,452 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_78
+2022-10-24 15:06:56,453 - trainer - INFO - 
+*****************[epoch: 78, global step: 79] eval training set at end of epoch***************
+2022-10-24 15:06:56,454 - trainer - INFO - {
+  "train_loss": 446.08026123046875
+}
+2022-10-24 15:06:56,454 - trainer - INFO - start training epoch 79
+2022-10-24 15:06:56,454 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,455 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,455 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,463 - trainer - INFO - 
+*****************[epoch: 79, global step: 80] eval training set at end of epoch***************
+2022-10-24 15:06:56,463 - trainer - INFO - {
+  "train_loss": 316.4659423828125
+}
+2022-10-24 15:06:56,463 - trainer - INFO - start training epoch 80
+2022-10-24 15:06:56,464 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,464 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,464 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,471 - trainer - INFO - 
+*****************[epoch: 80, global step: 80] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,472 - trainer - INFO - {
+  "train_loss": 308.77330017089844
+}
+2022-10-24 15:06:56,478 - trainer - INFO - 
+*****************[epoch: 80, global step: 80] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,479 - trainer - INFO - {
+  "dev_loss": 252.4536895751953,
+  "dev_best_score_for_loss": -252.4536895751953
+}
+2022-10-24 15:06:56,479 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,480 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,481 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,481 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_74
+2022-10-24 15:06:56,482 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,485 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,485 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,485 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,486 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,486 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_80
+2022-10-24 15:06:56,490 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_80
+2022-10-24 15:06:56,491 - trainer - INFO - 
+*****************[epoch: 80, global step: 81] eval training set at end of epoch***************
+2022-10-24 15:06:56,492 - trainer - INFO - {
+  "train_loss": 301.0806579589844
+}
+2022-10-24 15:06:56,492 - trainer - INFO - start training epoch 81
+2022-10-24 15:06:56,492 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,492 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,493 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,501 - trainer - INFO - 
+*****************[epoch: 81, global step: 82] eval training set at end of epoch***************
+2022-10-24 15:06:56,502 - trainer - INFO - {
+  "train_loss": 252.45367431640625
+}
+2022-10-24 15:06:56,504 - trainer - INFO - start training epoch 82
+2022-10-24 15:06:56,505 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,505 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,505 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,513 - trainer - INFO - 
+*****************[epoch: 82, global step: 82] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,513 - trainer - INFO - {
+  "train_loss": 199.14793395996094
+}
+2022-10-24 15:06:56,519 - trainer - INFO - 
+*****************[epoch: 82, global step: 82] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,519 - trainer - INFO - {
+  "dev_loss": 116.35679626464844,
+  "dev_best_score_for_loss": -116.35679626464844
+}
+2022-10-24 15:06:56,520 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,521 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,521 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,522 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_76
+2022-10-24 15:06:56,523 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,526 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,526 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,526 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,527 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,527 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_82
+2022-10-24 15:06:56,532 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_82
+2022-10-24 15:06:56,534 - trainer - INFO - 
+*****************[epoch: 82, global step: 83] eval training set at end of epoch***************
+2022-10-24 15:06:56,536 - trainer - INFO - {
+  "train_loss": 145.84219360351562
+}
+2022-10-24 15:06:56,537 - trainer - INFO - start training epoch 83
+2022-10-24 15:06:56,537 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,537 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,537 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,546 - trainer - INFO - 
+*****************[epoch: 83, global step: 84] eval training set at end of epoch***************
+2022-10-24 15:06:56,547 - trainer - INFO - {
+  "train_loss": 116.35679626464844
+}
+2022-10-24 15:06:56,547 - trainer - INFO - start training epoch 84
+2022-10-24 15:06:56,547 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,548 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,548 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,554 - trainer - INFO - 
+*****************[epoch: 84, global step: 84] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,554 - trainer - INFO - {
+  "train_loss": 117.2580680847168
+}
+2022-10-24 15:06:56,561 - trainer - INFO - 
+*****************[epoch: 84, global step: 84] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,562 - trainer - INFO - {
+  "dev_loss": 58.2886848449707,
+  "dev_best_score_for_loss": -58.2886848449707
+}
+2022-10-24 15:06:56,563 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,567 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,567 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,567 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_78
+2022-10-24 15:06:56,568 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,572 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,572 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,572 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,573 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,574 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_84
+2022-10-24 15:06:56,579 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_84
+2022-10-24 15:06:56,580 - trainer - INFO - 
+*****************[epoch: 84, global step: 85] eval training set at end of epoch***************
+2022-10-24 15:06:56,580 - trainer - INFO - {
+  "train_loss": 118.15933990478516
+}
+2022-10-24 15:06:56,581 - trainer - INFO - start training epoch 85
+2022-10-24 15:06:56,581 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,581 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,581 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,590 - trainer - INFO - 
+*****************[epoch: 85, global step: 86] eval training set at end of epoch***************
+2022-10-24 15:06:56,590 - trainer - INFO - {
+  "train_loss": 58.28868103027344
+}
+2022-10-24 15:06:56,591 - trainer - INFO - start training epoch 86
+2022-10-24 15:06:56,591 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,591 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,591 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,602 - trainer - INFO - 
+*****************[epoch: 86, global step: 86] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,603 - trainer - INFO - {
+  "train_loss": 42.83120155334473
+}
+2022-10-24 15:06:56,611 - trainer - INFO - 
+*****************[epoch: 86, global step: 86] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,612 - trainer - INFO - {
+  "dev_loss": 46.884464263916016,
+  "dev_best_score_for_loss": -46.884464263916016
+}
+2022-10-24 15:06:56,612 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,613 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,614 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,614 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_80
+2022-10-24 15:06:56,615 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,618 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,618 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,619 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,619 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,620 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_86
+2022-10-24 15:06:56,625 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_86
+2022-10-24 15:06:56,625 - trainer - INFO - 
+*****************[epoch: 86, global step: 87] eval training set at end of epoch***************
+2022-10-24 15:06:56,626 - trainer - INFO - {
+  "train_loss": 27.373722076416016
+}
+2022-10-24 15:06:56,626 - trainer - INFO - start training epoch 87
+2022-10-24 15:06:56,626 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,627 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,627 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,634 - trainer - INFO - 
+*****************[epoch: 87, global step: 88] eval training set at end of epoch***************
+2022-10-24 15:06:56,634 - trainer - INFO - {
+  "train_loss": 46.884464263916016
+}
+2022-10-24 15:06:56,635 - trainer - INFO - start training epoch 88
+2022-10-24 15:06:56,635 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,635 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,635 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,642 - trainer - INFO - 
+*****************[epoch: 88, global step: 88] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,646 - trainer - INFO - {
+  "train_loss": 36.70900630950928
+}
+2022-10-24 15:06:56,651 - trainer - INFO - 
+*****************[epoch: 88, global step: 88] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,652 - trainer - INFO - {
+  "dev_loss": 0.7961320281028748,
+  "dev_best_score_for_loss": -0.7961320281028748
+}
+2022-10-24 15:06:56,652 - trainer - INFO -    save the model with best score so far
+2022-10-24 15:06:56,654 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,654 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,655 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_82
+2022-10-24 15:06:56,657 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,661 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd
+2022-10-24 15:06:56,661 - trainer - INFO -   no_improve_count: 0
+2022-10-24 15:06:56,661 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,663 - trainer - INFO -    Check 2 checkpoints already saved
+2022-10-24 15:06:56,663 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_88
+2022-10-24 15:06:56,668 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_88
+2022-10-24 15:06:56,669 - trainer - INFO - 
+*****************[epoch: 88, global step: 89] eval training set at end of epoch***************
+2022-10-24 15:06:56,670 - trainer - INFO - {
+  "train_loss": 26.53354835510254
+}
+2022-10-24 15:06:56,671 - trainer - INFO - start training epoch 89
+2022-10-24 15:06:56,672 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,672 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,673 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,682 - trainer - INFO - 
+*****************[epoch: 89, global step: 90] eval training set at end of epoch***************
+2022-10-24 15:06:56,682 - trainer - INFO - {
+  "train_loss": 0.7961320281028748
+}
+2022-10-24 15:06:56,682 - trainer - INFO - start training epoch 90
+2022-10-24 15:06:56,683 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,683 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,683 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,694 - trainer - INFO - 
+*****************[epoch: 90, global step: 90] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,694 - trainer - INFO - {
+  "train_loss": 11.33361479640007
+}
+2022-10-24 15:06:56,703 - trainer - INFO - 
+*****************[epoch: 90, global step: 90] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,703 - trainer - INFO - {
+  "dev_loss": 25.245149612426758,
+  "dev_best_score_for_loss": -0.7961320281028748
+}
+2022-10-24 15:06:56,704 - trainer - INFO -   no_improve_count: 1
+2022-10-24 15:06:56,704 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,706 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,706 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,707 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_84
+2022-10-24 15:06:56,708 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_90
+2022-10-24 15:06:56,713 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_90
+2022-10-24 15:06:56,714 - trainer - INFO - 
+*****************[epoch: 90, global step: 91] eval training set at end of epoch***************
+2022-10-24 15:06:56,715 - trainer - INFO - {
+  "train_loss": 21.871097564697266
+}
+2022-10-24 15:06:56,715 - trainer - INFO - start training epoch 91
+2022-10-24 15:06:56,715 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,715 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,716 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,725 - trainer - INFO - 
+*****************[epoch: 91, global step: 92] eval training set at end of epoch***************
+2022-10-24 15:06:56,726 - trainer - INFO - {
+  "train_loss": 25.245149612426758
+}
+2022-10-24 15:06:56,726 - trainer - INFO - start training epoch 92
+2022-10-24 15:06:56,727 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,727 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,727 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,738 - trainer - INFO - 
+*****************[epoch: 92, global step: 92] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,738 - trainer - INFO - {
+  "train_loss": 16.71511745452881
+}
+2022-10-24 15:06:56,745 - trainer - INFO - 
+*****************[epoch: 92, global step: 92] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,746 - trainer - INFO - {
+  "dev_loss": 24.575117111206055,
+  "dev_best_score_for_loss": -0.7961320281028748
+}
+2022-10-24 15:06:56,747 - trainer - INFO -   no_improve_count: 2
+2022-10-24 15:06:56,747 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,749 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,749 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,749 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_86
+2022-10-24 15:06:56,751 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_92
+2022-10-24 15:06:56,756 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_92
+2022-10-24 15:06:56,757 - trainer - INFO - 
+*****************[epoch: 92, global step: 93] eval training set at end of epoch***************
+2022-10-24 15:06:56,758 - trainer - INFO - {
+  "train_loss": 8.18508529663086
+}
+2022-10-24 15:06:56,758 - trainer - INFO - start training epoch 93
+2022-10-24 15:06:56,758 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,759 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,759 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,768 - trainer - INFO - 
+*****************[epoch: 93, global step: 94] eval training set at end of epoch***************
+2022-10-24 15:06:56,768 - trainer - INFO - {
+  "train_loss": 24.575117111206055
+}
+2022-10-24 15:06:56,769 - trainer - INFO - start training epoch 94
+2022-10-24 15:06:56,769 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,769 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,770 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,777 - trainer - INFO - 
+*****************[epoch: 94, global step: 94] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,777 - trainer - INFO - {
+  "train_loss": 30.85810947418213
+}
+2022-10-24 15:06:56,786 - trainer - INFO - 
+*****************[epoch: 94, global step: 94] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,786 - trainer - INFO - {
+  "dev_loss": 26.282981872558594,
+  "dev_best_score_for_loss": -0.7961320281028748
+}
+2022-10-24 15:06:56,787 - trainer - INFO -   no_improve_count: 3
+2022-10-24 15:06:56,787 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,788 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,789 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,789 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_88
+2022-10-24 15:06:56,791 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_94
+2022-10-24 15:06:56,797 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_94
+2022-10-24 15:06:56,798 - trainer - INFO - 
+*****************[epoch: 94, global step: 95] eval training set at end of epoch***************
+2022-10-24 15:06:56,798 - trainer - INFO - {
+  "train_loss": 37.1411018371582
+}
+2022-10-24 15:06:56,799 - trainer - INFO - start training epoch 95
+2022-10-24 15:06:56,799 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,800 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,800 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,807 - trainer - INFO - 
+*****************[epoch: 95, global step: 96] eval training set at end of epoch***************
+2022-10-24 15:06:56,808 - trainer - INFO - {
+  "train_loss": 26.282981872558594
+}
+2022-10-24 15:06:56,808 - trainer - INFO - start training epoch 96
+2022-10-24 15:06:56,808 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,808 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,809 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,816 - trainer - INFO - 
+*****************[epoch: 96, global step: 96] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,816 - trainer - INFO - {
+  "train_loss": 30.82516860961914
+}
+2022-10-24 15:06:56,822 - trainer - INFO - 
+*****************[epoch: 96, global step: 96] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,823 - trainer - INFO - {
+  "dev_loss": 48.39944076538086,
+  "dev_best_score_for_loss": -0.7961320281028748
+}
+2022-10-24 15:06:56,824 - trainer - INFO -   no_improve_count: 4
+2022-10-24 15:06:56,824 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,825 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,826 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,826 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_90
+2022-10-24 15:06:56,828 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_96
+2022-10-24 15:06:56,836 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_96
+2022-10-24 15:06:56,837 - trainer - INFO - 
+*****************[epoch: 96, global step: 97] eval training set at end of epoch***************
+2022-10-24 15:06:56,837 - trainer - INFO - {
+  "train_loss": 35.36735534667969
+}
+2022-10-24 15:06:56,838 - trainer - INFO - start training epoch 97
+2022-10-24 15:06:56,838 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,838 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,839 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,849 - trainer - INFO - 
+*****************[epoch: 97, global step: 98] eval training set at end of epoch***************
+2022-10-24 15:06:56,849 - trainer - INFO - {
+  "train_loss": 48.39944076538086
+}
+2022-10-24 15:06:56,850 - trainer - INFO - start training epoch 98
+2022-10-24 15:06:56,850 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,850 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,851 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,859 - trainer - INFO - 
+*****************[epoch: 98, global step: 98] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,859 - trainer - INFO - {
+  "train_loss": 44.36862373352051
+}
+2022-10-24 15:06:56,867 - trainer - INFO - 
+*****************[epoch: 98, global step: 98] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,867 - trainer - INFO - {
+  "dev_loss": 43.0963020324707,
+  "dev_best_score_for_loss": -0.7961320281028748
+}
+2022-10-24 15:06:56,868 - trainer - INFO -   no_improve_count: 5
+2022-10-24 15:06:56,868 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,869 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,870 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,870 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_92
+2022-10-24 15:06:56,871 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_98
+2022-10-24 15:06:56,877 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_98
+2022-10-24 15:06:56,878 - trainer - INFO - 
+*****************[epoch: 98, global step: 99] eval training set at end of epoch***************
+2022-10-24 15:06:56,878 - trainer - INFO - {
+  "train_loss": 40.337806701660156
+}
+2022-10-24 15:06:56,879 - trainer - INFO - start training epoch 99
+2022-10-24 15:06:56,879 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,879 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,880 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,888 - trainer - INFO - 
+*****************[epoch: 99, global step: 100] eval training set at end of epoch***************
+2022-10-24 15:06:56,889 - trainer - INFO - {
+  "train_loss": 43.0963020324707
+}
+2022-10-24 15:06:56,889 - trainer - INFO - start training epoch 100
+2022-10-24 15:06:56,889 - trainer - INFO - training using device=cuda
+2022-10-24 15:06:56,889 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-10-24 15:06:56,890 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 16,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_carrier_kdd",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.1
+}
+2022-10-24 15:06:56,897 - trainer - INFO - 
+*****************[epoch: 100, global step: 100] eval training set based on eval_every=2***************
+2022-10-24 15:06:56,898 - trainer - INFO - {
+  "train_loss": 47.569475173950195
+}
+2022-10-24 15:06:56,904 - trainer - INFO - 
+*****************[epoch: 100, global step: 100] eval development set based on eval_every=2***************
+2022-10-24 15:06:56,905 - trainer - INFO - {
+  "dev_loss": 44.77521896362305,
+  "dev_best_score_for_loss": -0.7961320281028748
+}
+2022-10-24 15:06:56,905 - trainer - INFO -   no_improve_count: 6
+2022-10-24 15:06:56,906 - trainer - INFO -   patience: 200
+2022-10-24 15:06:56,907 - trainer - INFO -    Check 3 checkpoints already saved
+2022-10-24 15:06:56,907 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-10-24 15:06:56,907 - trainer - INFO -   Remove checkpoint tmp/mlp_carrier_kdd\ck_94
+2022-10-24 15:06:56,909 - trainer - INFO -   Save checkpoint to tmp/mlp_carrier_kdd\ck_100
+2022-10-24 15:06:56,913 - trainer - INFO - save model to path: tmp/mlp_carrier_kdd\ck_100
+2022-10-24 15:06:56,913 - trainer - INFO - 
+*****************[epoch: 100, global step: 101] eval training set at end of epoch***************
+2022-10-24 15:06:56,914 - trainer - INFO - {
+  "train_loss": 52.04264831542969
+}

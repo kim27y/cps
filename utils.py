@@ -22,6 +22,26 @@ def count_dm_params(model):
     return total_count, trainable_count, total_count - trainable_count
 
 
+def print_kdd(product, ton):
+    if product == "carrier":
+        sub = ton - 750
+        print(f"6/{ton}/8/1/{680 + sub}/1/5")
+    if product == "e41g":
+        print(f"6/{ton}/6/15")
+    if product == "pivot":
+        print(f"6/{ton}/10/로냉")
+    if product == "scm":
+        sub = ton - 775
+        print(f"5/{ton}/7/5/{710 + sub}/3/15")
+    if product == "tes1":
+        sub = ton - 750
+        print(f"6/{ton}/8/1/{710 + sub}/2/15")
+    if product == "um":
+        sub = ton - 750
+        print(f"6/{ton}/8/1/{710 + sub}/2/15")
+    if product == "yoke":
+        print(f"5/{ton}/5/15")
+
 def get_criterion(name):
     if name == "bce":
         return torch.nn.BCELoss(reduction="mean")

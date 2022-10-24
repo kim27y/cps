@@ -3,7 +3,8 @@ from mlp import MLP
 from trainer import Trainer
 import pandas as pd
 import argparse
-
+import tqdm
+from torch.utils.data import DataLoader
 
 def get_numeric_feature_names(dataset_path):
     df = pd.read_csv(dataset_path)
@@ -40,19 +41,20 @@ if __name__ == '__main__':
     args.do_train = True
     args.do_eval = True
 
-    # train_path = f"data/{args.dataset_name}/train.csv"
-    # test_path = f"data/{args.dataset_name}/test.csv"
-    # save_path = f"tmp/mlp_{args.dataset_name}"
+    train_path = f"data/{args.dataset_name}/train.csv"
+    test_path = f"data/{args.dataset_name}/test.csv"
+    save_path = f"tmp/mlp_{args.dataset_name}"
 
 
-    train_path = f"data/{args.dataset_name}_kdd/train.csv"
-    test_path = f"data/{args.dataset_name}_kdd/test.csv"
-    save_path = f"tmp/mlp_{args.dataset_name}_kdd" 
+    # train_path = f"data/{args.dataset_name}_kdd/train.csv"
+    # test_path = f"data/{args.dataset_name}_kdd/test.csv"
+    # save_path = f"tmp/mlp_{args.dataset_name}_kdd" 
 
     numeric_feature_names = get_numeric_feature_names(train_path)
 
     train_data = CSVDataset(train_path, numeric_feature_names=numeric_feature_names, label_name="target",is_reg=args.task=="reg")
     dev_data = CSVDataset(test_path, numeric_feature_names=numeric_feature_names, label_name="target",is_reg=args.task=="reg")
+
 
     if args.do_train:
         model = MLP(len(numeric_feature_names), train_data.num_label if args.task == "cls" else 1, task=args.task,

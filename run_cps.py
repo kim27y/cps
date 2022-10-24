@@ -3,7 +3,7 @@ from mlp import MLP
 from trainer import Trainer
 import pandas as pd
 import argparse
-
+from utils import print_kdd
 
 def get_numeric_feature_names(dataset_path):
     df = pd.read_csv(dataset_path)
@@ -31,8 +31,14 @@ if __name__ == '__main__':
     args = parser.parse_args()
     args.do_eval = True
 
-    save_path = f"model/mlp_{args.product}"
+    if args.task =="reg":
+        save_path = f"model/mlp_{args.product}"
+    else:
+        save_path = f"model/mlp_{args.product}_kdd"
     
     model = MLP.load_model(save_path)
-    
-    print(model.evaluate2(args.Ton))
+
+    if args.task =="reg":
+        print(model.evaluate2(args.Ton))
+    else:
+        print_kdd(args.product,model.evaluate2(args.Ton))

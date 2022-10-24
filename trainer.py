@@ -402,7 +402,7 @@ class Trainer():
             for step, (X, y) in (pbar):
                 self.optimizer.zero_grad()
                 self.model.train()
-
+                
                 features, labels = batch_to_device(X, y, device=self.device)
                 if self.loss_fn == "ce":
                     labels = labels.long()
@@ -450,7 +450,7 @@ class Trainer():
 
                     self.save_checkpoint(os.path.join(self.save_path, f"ck_{global_step + 1}"))
                 global_step += 1
-
+                
             logger.info(
                 f'\n*****************[epoch: {epoch + 1}, global step: {global_step + 1}] eval training set at end of epoch***************')
             eval_metrics = self.eval_train_during_training(train_labels, train_preds)

@@ -18,7 +18,7 @@ class MLP(nn.Module):
     def __init__(self, feature_dim, label_num, hidden_units=[32, 16, 16], dropout_p=0.0, use_bn=False,
                  linear_act="relu", device="cpu", task="reg"):
         super(MLP, self).__init__()
-        assert task in ["cls", "reg"], "use either cls or reg"
+        assert task in ["cls", "reg", "kdd"], "use either cls or reg or kdd"
         self.config_keys = ["feature_dim", "label_num", "hidden_units", "dropout_p", "linear_act", "device", "task",
                             "use_bn"]
         self.feature_dim = feature_dim
@@ -77,19 +77,6 @@ class MLP(nn.Module):
         # deep_output = self.linear_output(self.ln(deep_input))
         deep_output = self.linear_output(deep_input)
         return deep_output if self.task == "cls" else deep_output.squeeze()
-    
-    # def forward(self, X):
-    #     deep_input = X
-    #     for i in range(len(self.linears)):
-    #         fc = self.linears[i](deep_input)
-    #         if self.use_bn:
-    #             fc = self.bn[i](fc)
-    #         fc = self.activation_layers[i](fc)
-    #         fc = self.dropout(fc)
-    #         deep_input = fc
-    #     # deep_output = self.linear_output(self.ln(deep_input))
-    #     deep_output = self.linear_output(deep_input)
-    #     return deep_output if self.task == "cls" else deep_output.squeeze()
 
     def predict(self, data, device="cuda", batch_size=64):
         preds = []
@@ -123,8 +110,9 @@ class MLP(nn.Module):
         with torch.no_grad():
             for X, y in tqdm(eval_dataloader, desc="evaluating"):
                 features, labels = batch_to_device(X, y, device=device)
-                outputs = self(torch.round(features.float(),decimals=1))
-                outputs = torch.round(outputs,decimals=1)
+                # outputs = self(torch.round(features.float(),decimals=1))
+                # outputs = torch.round(outputs,decimals=1)
+                outputs = self(features.float())
                 loss = criterion(outputs,
                                  labels.long() if self.task == "cls" else labels.float())  # for future version, if self.task == "cls" where criterion is cross entropy loss so it needs long labels
                 t_loss += loss.item()
