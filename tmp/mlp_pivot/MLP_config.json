@@ -1,0 +1,14 @@
+{
+  "feature_dim": 1,
+  "label_num": 8,
+  "hidden_units": [
+    128,
+    64,
+    32
+  ],
+  "dropout_p": 0.0,
+  "linear_act": "relu",
+  "device": "cuda",
+  "task": "cls",
+  "use_bn": false
+}

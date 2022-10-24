@@ -1,0 +1,15 @@
+{
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cuda",
+  "patience": 200,
+  "save_path": "tmp/mlp_um",
+  "eval_on": "accuracy",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "ce",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}

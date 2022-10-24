@@ -1,0 +1,3493 @@
+2022-09-23 14:27:13,337 - trainer - INFO - MLP(
+  (linears): ModuleList(
+    (0): Linear(in_features=1, out_features=128, bias=True)
+    (1): Linear(in_features=128, out_features=64, bias=True)
+    (2): Linear(in_features=64, out_features=32, bias=True)
+  )
+  (activation_layers): ModuleList(
+    (0): ReLU(inplace=True)
+    (1): ReLU(inplace=True)
+    (2): ReLU(inplace=True)
+  )
+  (dropout): Dropout(p=0.0, inplace=False)
+  (linear_output): Linear(in_features=32, out_features=1, bias=True)
+)
+2022-09-23 14:27:13,338 - trainer - INFO -   Total params: 10625
+2022-09-23 14:27:13,338 - trainer - INFO -   Trainable params: 10625
+2022-09-23 14:27:13,339 - trainer - INFO -   Non-trainable params: 0
+2022-09-23 14:27:13,339 - trainer - INFO -   There are 8  training examples
+2022-09-23 14:27:13,339 - trainer - INFO -   There are 8 examples for development
+2022-09-23 14:27:13,340 - trainer - INFO - start training epoch 1
+2022-09-23 14:27:13,340 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,340 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,341 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,380 - trainer - INFO - 
+*****************[epoch: 1, global step: 2] eval training set at end of epoch***************
+2022-09-23 14:27:13,381 - trainer - INFO - {
+  "train_loss": 4009.286865234375
+}
+2022-09-23 14:27:13,381 - trainer - INFO - start training epoch 2
+2022-09-23 14:27:13,381 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,382 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,382 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,385 - trainer - INFO - 
+*****************[epoch: 2, global step: 2] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,386 - trainer - INFO - {
+  "train_loss": 3931.142578125
+}
+2022-09-23 14:27:13,389 - trainer - INFO - 
+*****************[epoch: 2, global step: 2] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,389 - trainer - INFO - {
+  "dev_loss": 3283.28271484375,
+  "dev_best_score_for_loss": -3283.28271484375
+}
+2022-09-23 14:27:13,390 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,391 - trainer - INFO -    Check 0 checkpoints already saved
+2022-09-23 14:27:13,391 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,394 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,394 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,394 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,395 - trainer - INFO -    Check 0 checkpoints already saved
+2022-09-23 14:27:13,395 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_2
+2022-09-23 14:27:13,398 - trainer - INFO - save model to path: model/mlp_yoke\ck_2
+2022-09-23 14:27:13,399 - trainer - INFO - 
+*****************[epoch: 2, global step: 3] eval training set at end of epoch***************
+2022-09-23 14:27:13,399 - trainer - INFO - {
+  "train_loss": 3852.998291015625
+}
+2022-09-23 14:27:13,399 - trainer - INFO - start training epoch 3
+2022-09-23 14:27:13,400 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,400 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,400 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,404 - trainer - INFO - 
+*****************[epoch: 3, global step: 4] eval training set at end of epoch***************
+2022-09-23 14:27:13,404 - trainer - INFO - {
+  "train_loss": 3283.282470703125
+}
+2022-09-23 14:27:13,404 - trainer - INFO - start training epoch 4
+2022-09-23 14:27:13,405 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,405 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,405 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,408 - trainer - INFO - 
+*****************[epoch: 4, global step: 4] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,408 - trainer - INFO - {
+  "train_loss": 2786.197021484375
+}
+2022-09-23 14:27:13,410 - trainer - INFO - 
+*****************[epoch: 4, global step: 4] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,411 - trainer - INFO - {
+  "dev_loss": 879.5419921875,
+  "dev_best_score_for_loss": -879.5419921875
+}
+2022-09-23 14:27:13,411 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,412 - trainer - INFO -    Check 1 checkpoints already saved
+2022-09-23 14:27:13,412 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,415 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,415 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,415 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,416 - trainer - INFO -    Check 1 checkpoints already saved
+2022-09-23 14:27:13,416 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_4
+2022-09-23 14:27:13,418 - trainer - INFO - save model to path: model/mlp_yoke\ck_4
+2022-09-23 14:27:13,419 - trainer - INFO - 
+*****************[epoch: 4, global step: 5] eval training set at end of epoch***************
+2022-09-23 14:27:13,419 - trainer - INFO - {
+  "train_loss": 2289.111572265625
+}
+2022-09-23 14:27:13,420 - trainer - INFO - start training epoch 5
+2022-09-23 14:27:13,420 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,420 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,421 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,425 - trainer - INFO - 
+*****************[epoch: 5, global step: 6] eval training set at end of epoch***************
+2022-09-23 14:27:13,426 - trainer - INFO - {
+  "train_loss": 879.5419921875
+}
+2022-09-23 14:27:13,426 - trainer - INFO - start training epoch 6
+2022-09-23 14:27:13,426 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,427 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,427 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,431 - trainer - INFO - 
+*****************[epoch: 6, global step: 6] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,431 - trainer - INFO - {
+  "train_loss": 451.4983825683594
+}
+2022-09-23 14:27:13,434 - trainer - INFO - 
+*****************[epoch: 6, global step: 6] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,435 - trainer - INFO - {
+  "dev_loss": 1669.247802734375,
+  "dev_best_score_for_loss": -879.5419921875
+}
+2022-09-23 14:27:13,435 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:13,436 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,437 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:13,437 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_6
+2022-09-23 14:27:13,441 - trainer - INFO - save model to path: model/mlp_yoke\ck_6
+2022-09-23 14:27:13,442 - trainer - INFO - 
+*****************[epoch: 6, global step: 7] eval training set at end of epoch***************
+2022-09-23 14:27:13,442 - trainer - INFO - {
+  "train_loss": 23.45477294921875
+}
+2022-09-23 14:27:13,443 - trainer - INFO - start training epoch 7
+2022-09-23 14:27:13,443 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,443 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,444 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,448 - trainer - INFO - 
+*****************[epoch: 7, global step: 8] eval training set at end of epoch***************
+2022-09-23 14:27:13,448 - trainer - INFO - {
+  "train_loss": 1669.247802734375
+}
+2022-09-23 14:27:13,448 - trainer - INFO - start training epoch 8
+2022-09-23 14:27:13,449 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,449 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,449 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,453 - trainer - INFO - 
+*****************[epoch: 8, global step: 8] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,453 - trainer - INFO - {
+  "train_loss": 1299.0823059082031
+}
+2022-09-23 14:27:13,456 - trainer - INFO - 
+*****************[epoch: 8, global step: 8] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,456 - trainer - INFO - {
+  "dev_loss": 112.86444091796875,
+  "dev_best_score_for_loss": -112.86444091796875
+}
+2022-09-23 14:27:13,457 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,458 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,458 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,458 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_2
+2022-09-23 14:27:13,459 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,462 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,462 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,462 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,463 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:13,463 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_8
+2022-09-23 14:27:13,466 - trainer - INFO - save model to path: model/mlp_yoke\ck_8
+2022-09-23 14:27:13,467 - trainer - INFO - 
+*****************[epoch: 8, global step: 9] eval training set at end of epoch***************
+2022-09-23 14:27:13,467 - trainer - INFO - {
+  "train_loss": 928.9168090820312
+}
+2022-09-23 14:27:13,468 - trainer - INFO - start training epoch 9
+2022-09-23 14:27:13,468 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,468 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,469 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,473 - trainer - INFO - 
+*****************[epoch: 9, global step: 10] eval training set at end of epoch***************
+2022-09-23 14:27:13,473 - trainer - INFO - {
+  "train_loss": 112.86444091796875
+}
+2022-09-23 14:27:13,474 - trainer - INFO - start training epoch 10
+2022-09-23 14:27:13,474 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,474 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,474 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,478 - trainer - INFO - 
+*****************[epoch: 10, global step: 10] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,478 - trainer - INFO - {
+  "train_loss": 94.43370056152344
+}
+2022-09-23 14:27:13,480 - trainer - INFO - 
+*****************[epoch: 10, global step: 10] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,480 - trainer - INFO - {
+  "dev_loss": 380.1185302734375,
+  "dev_best_score_for_loss": -112.86444091796875
+}
+2022-09-23 14:27:13,481 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:13,481 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,482 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,482 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,482 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_4
+2022-09-23 14:27:13,483 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_10
+2022-09-23 14:27:13,486 - trainer - INFO - save model to path: model/mlp_yoke\ck_10
+2022-09-23 14:27:13,487 - trainer - INFO - 
+*****************[epoch: 10, global step: 11] eval training set at end of epoch***************
+2022-09-23 14:27:13,488 - trainer - INFO - {
+  "train_loss": 76.00296020507812
+}
+2022-09-23 14:27:13,488 - trainer - INFO - start training epoch 11
+2022-09-23 14:27:13,488 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,488 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,489 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,492 - trainer - INFO - 
+*****************[epoch: 11, global step: 12] eval training set at end of epoch***************
+2022-09-23 14:27:13,493 - trainer - INFO - {
+  "train_loss": 380.1185607910156
+}
+2022-09-23 14:27:13,493 - trainer - INFO - start training epoch 12
+2022-09-23 14:27:13,493 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,493 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,494 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,497 - trainer - INFO - 
+*****************[epoch: 12, global step: 12] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,497 - trainer - INFO - {
+  "train_loss": 508.9620819091797
+}
+2022-09-23 14:27:13,499 - trainer - INFO - 
+*****************[epoch: 12, global step: 12] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,500 - trainer - INFO - {
+  "dev_loss": 729.2221069335938,
+  "dev_best_score_for_loss": -112.86444091796875
+}
+2022-09-23 14:27:13,500 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:13,501 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,502 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,502 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,502 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_6
+2022-09-23 14:27:13,503 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_12
+2022-09-23 14:27:13,506 - trainer - INFO - save model to path: model/mlp_yoke\ck_12
+2022-09-23 14:27:13,507 - trainer - INFO - 
+*****************[epoch: 12, global step: 13] eval training set at end of epoch***************
+2022-09-23 14:27:13,507 - trainer - INFO - {
+  "train_loss": 637.8056030273438
+}
+2022-09-23 14:27:13,508 - trainer - INFO - start training epoch 13
+2022-09-23 14:27:13,508 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,508 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,508 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,511 - trainer - INFO - 
+*****************[epoch: 13, global step: 14] eval training set at end of epoch***************
+2022-09-23 14:27:13,512 - trainer - INFO - {
+  "train_loss": 729.2221069335938
+}
+2022-09-23 14:27:13,512 - trainer - INFO - start training epoch 14
+2022-09-23 14:27:13,512 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,513 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,513 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,516 - trainer - INFO - 
+*****************[epoch: 14, global step: 14] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,516 - trainer - INFO - {
+  "train_loss": 693.64599609375
+}
+2022-09-23 14:27:13,518 - trainer - INFO - 
+*****************[epoch: 14, global step: 14] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,519 - trainer - INFO - {
+  "dev_loss": 465.4963073730469,
+  "dev_best_score_for_loss": -112.86444091796875
+}
+2022-09-23 14:27:13,519 - trainer - INFO -   no_improve_count: 3
+2022-09-23 14:27:13,519 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,520 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,520 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,521 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_8
+2022-09-23 14:27:13,522 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_14
+2022-09-23 14:27:13,524 - trainer - INFO - save model to path: model/mlp_yoke\ck_14
+2022-09-23 14:27:13,525 - trainer - INFO - 
+*****************[epoch: 14, global step: 15] eval training set at end of epoch***************
+2022-09-23 14:27:13,525 - trainer - INFO - {
+  "train_loss": 658.0698852539062
+}
+2022-09-23 14:27:13,525 - trainer - INFO - start training epoch 15
+2022-09-23 14:27:13,526 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,526 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,526 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,529 - trainer - INFO - 
+*****************[epoch: 15, global step: 16] eval training set at end of epoch***************
+2022-09-23 14:27:13,529 - trainer - INFO - {
+  "train_loss": 465.4963073730469
+}
+2022-09-23 14:27:13,530 - trainer - INFO - start training epoch 16
+2022-09-23 14:27:13,530 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,530 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,531 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,534 - trainer - INFO - 
+*****************[epoch: 16, global step: 16] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,534 - trainer - INFO - {
+  "train_loss": 344.5534439086914
+}
+2022-09-23 14:27:13,536 - trainer - INFO - 
+*****************[epoch: 16, global step: 16] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,537 - trainer - INFO - {
+  "dev_loss": 43.40573501586914,
+  "dev_best_score_for_loss": -43.40573501586914
+}
+2022-09-23 14:27:13,537 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,538 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,538 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,539 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_10
+2022-09-23 14:27:13,540 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,541 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,542 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,542 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,543 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:13,543 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_16
+2022-09-23 14:27:13,545 - trainer - INFO - save model to path: model/mlp_yoke\ck_16
+2022-09-23 14:27:13,546 - trainer - INFO - 
+*****************[epoch: 16, global step: 17] eval training set at end of epoch***************
+2022-09-23 14:27:13,546 - trainer - INFO - {
+  "train_loss": 223.61058044433594
+}
+2022-09-23 14:27:13,547 - trainer - INFO - start training epoch 17
+2022-09-23 14:27:13,547 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,547 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,548 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,551 - trainer - INFO - 
+*****************[epoch: 17, global step: 18] eval training set at end of epoch***************
+2022-09-23 14:27:13,552 - trainer - INFO - {
+  "train_loss": 43.405738830566406
+}
+2022-09-23 14:27:13,552 - trainer - INFO - start training epoch 18
+2022-09-23 14:27:13,552 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,552 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,553 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,556 - trainer - INFO - 
+*****************[epoch: 18, global step: 18] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,556 - trainer - INFO - {
+  "train_loss": 42.92919158935547
+}
+2022-09-23 14:27:13,558 - trainer - INFO - 
+*****************[epoch: 18, global step: 18] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,559 - trainer - INFO - {
+  "dev_loss": 219.2073211669922,
+  "dev_best_score_for_loss": -43.40573501586914
+}
+2022-09-23 14:27:13,559 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:13,560 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,561 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,561 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,561 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_12
+2022-09-23 14:27:13,562 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_18
+2022-09-23 14:27:13,565 - trainer - INFO - save model to path: model/mlp_yoke\ck_18
+2022-09-23 14:27:13,566 - trainer - INFO - 
+*****************[epoch: 18, global step: 19] eval training set at end of epoch***************
+2022-09-23 14:27:13,566 - trainer - INFO - {
+  "train_loss": 42.45264434814453
+}
+2022-09-23 14:27:13,566 - trainer - INFO - start training epoch 19
+2022-09-23 14:27:13,566 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,567 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,567 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,571 - trainer - INFO - 
+*****************[epoch: 19, global step: 20] eval training set at end of epoch***************
+2022-09-23 14:27:13,571 - trainer - INFO - {
+  "train_loss": 219.2073516845703
+}
+2022-09-23 14:27:13,572 - trainer - INFO - start training epoch 20
+2022-09-23 14:27:13,572 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,572 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,572 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,576 - trainer - INFO - 
+*****************[epoch: 20, global step: 20] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,576 - trainer - INFO - {
+  "train_loss": 289.6556930541992
+}
+2022-09-23 14:27:13,579 - trainer - INFO - 
+*****************[epoch: 20, global step: 20] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,579 - trainer - INFO - {
+  "dev_loss": 290.4416809082031,
+  "dev_best_score_for_loss": -43.40573501586914
+}
+2022-09-23 14:27:13,579 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:13,580 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,581 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,581 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,581 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_14
+2022-09-23 14:27:13,582 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_20
+2022-09-23 14:27:13,585 - trainer - INFO - save model to path: model/mlp_yoke\ck_20
+2022-09-23 14:27:13,586 - trainer - INFO - 
+*****************[epoch: 20, global step: 21] eval training set at end of epoch***************
+2022-09-23 14:27:13,586 - trainer - INFO - {
+  "train_loss": 360.1040344238281
+}
+2022-09-23 14:27:13,587 - trainer - INFO - start training epoch 21
+2022-09-23 14:27:13,587 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,587 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,588 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,592 - trainer - INFO - 
+*****************[epoch: 21, global step: 22] eval training set at end of epoch***************
+2022-09-23 14:27:13,592 - trainer - INFO - {
+  "train_loss": 290.4416809082031
+}
+2022-09-23 14:27:13,592 - trainer - INFO - start training epoch 22
+2022-09-23 14:27:13,593 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,593 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,593 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,597 - trainer - INFO - 
+*****************[epoch: 22, global step: 22] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,597 - trainer - INFO - {
+  "train_loss": 203.87621307373047
+}
+2022-09-23 14:27:13,599 - trainer - INFO - 
+*****************[epoch: 22, global step: 22] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,599 - trainer - INFO - {
+  "dev_loss": 20.064470291137695,
+  "dev_best_score_for_loss": -20.064470291137695
+}
+2022-09-23 14:27:13,600 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,601 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,601 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,601 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_16
+2022-09-23 14:27:13,603 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,605 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,605 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,606 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,606 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:13,606 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_22
+2022-09-23 14:27:13,609 - trainer - INFO - save model to path: model/mlp_yoke\ck_22
+2022-09-23 14:27:13,610 - trainer - INFO - 
+*****************[epoch: 22, global step: 23] eval training set at end of epoch***************
+2022-09-23 14:27:13,610 - trainer - INFO - {
+  "train_loss": 117.31074523925781
+}
+2022-09-23 14:27:13,611 - trainer - INFO - start training epoch 23
+2022-09-23 14:27:13,611 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,611 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,611 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,615 - trainer - INFO - 
+*****************[epoch: 23, global step: 24] eval training set at end of epoch***************
+2022-09-23 14:27:13,615 - trainer - INFO - {
+  "train_loss": 20.064470291137695
+}
+2022-09-23 14:27:13,616 - trainer - INFO - start training epoch 24
+2022-09-23 14:27:13,616 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,616 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,616 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,619 - trainer - INFO - 
+*****************[epoch: 24, global step: 24] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,620 - trainer - INFO - {
+  "train_loss": 30.299128532409668
+}
+2022-09-23 14:27:13,624 - trainer - INFO - 
+*****************[epoch: 24, global step: 24] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,624 - trainer - INFO - {
+  "dev_loss": 116.12773132324219,
+  "dev_best_score_for_loss": -20.064470291137695
+}
+2022-09-23 14:27:13,625 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:13,625 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,626 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,627 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,627 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_18
+2022-09-23 14:27:13,628 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_24
+2022-09-23 14:27:13,632 - trainer - INFO - save model to path: model/mlp_yoke\ck_24
+2022-09-23 14:27:13,632 - trainer - INFO - 
+*****************[epoch: 24, global step: 25] eval training set at end of epoch***************
+2022-09-23 14:27:13,633 - trainer - INFO - {
+  "train_loss": 40.53378677368164
+}
+2022-09-23 14:27:13,633 - trainer - INFO - start training epoch 25
+2022-09-23 14:27:13,633 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,634 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,634 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,639 - trainer - INFO - 
+*****************[epoch: 25, global step: 26] eval training set at end of epoch***************
+2022-09-23 14:27:13,639 - trainer - INFO - {
+  "train_loss": 116.12773132324219
+}
+2022-09-23 14:27:13,639 - trainer - INFO - start training epoch 26
+2022-09-23 14:27:13,640 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,640 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,640 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,644 - trainer - INFO - 
+*****************[epoch: 26, global step: 26] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,644 - trainer - INFO - {
+  "train_loss": 146.4443359375
+}
+2022-09-23 14:27:13,647 - trainer - INFO - 
+*****************[epoch: 26, global step: 26] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,648 - trainer - INFO - {
+  "dev_loss": 186.7523193359375,
+  "dev_best_score_for_loss": -20.064470291137695
+}
+2022-09-23 14:27:13,648 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:13,649 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,650 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,650 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,650 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_20
+2022-09-23 14:27:13,652 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_26
+2022-09-23 14:27:13,655 - trainer - INFO - save model to path: model/mlp_yoke\ck_26
+2022-09-23 14:27:13,656 - trainer - INFO - 
+*****************[epoch: 26, global step: 27] eval training set at end of epoch***************
+2022-09-23 14:27:13,656 - trainer - INFO - {
+  "train_loss": 176.7609405517578
+}
+2022-09-23 14:27:13,657 - trainer - INFO - start training epoch 27
+2022-09-23 14:27:13,657 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,657 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,657 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,662 - trainer - INFO - 
+*****************[epoch: 27, global step: 28] eval training set at end of epoch***************
+2022-09-23 14:27:13,662 - trainer - INFO - {
+  "train_loss": 186.7523193359375
+}
+2022-09-23 14:27:13,662 - trainer - INFO - start training epoch 28
+2022-09-23 14:27:13,663 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,663 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,663 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,667 - trainer - INFO - 
+*****************[epoch: 28, global step: 28] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,667 - trainer - INFO - {
+  "train_loss": 166.10836029052734
+}
+2022-09-23 14:27:13,670 - trainer - INFO - 
+*****************[epoch: 28, global step: 28] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,670 - trainer - INFO - {
+  "dev_loss": 78.28356170654297,
+  "dev_best_score_for_loss": -20.064470291137695
+}
+2022-09-23 14:27:13,671 - trainer - INFO -   no_improve_count: 3
+2022-09-23 14:27:13,671 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,672 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,673 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,673 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_22
+2022-09-23 14:27:13,674 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_28
+2022-09-23 14:27:13,677 - trainer - INFO - save model to path: model/mlp_yoke\ck_28
+2022-09-23 14:27:13,678 - trainer - INFO - 
+*****************[epoch: 28, global step: 29] eval training set at end of epoch***************
+2022-09-23 14:27:13,678 - trainer - INFO - {
+  "train_loss": 145.4644012451172
+}
+2022-09-23 14:27:13,678 - trainer - INFO - start training epoch 29
+2022-09-23 14:27:13,679 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,679 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,679 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,683 - trainer - INFO - 
+*****************[epoch: 29, global step: 30] eval training set at end of epoch***************
+2022-09-23 14:27:13,683 - trainer - INFO - {
+  "train_loss": 78.28355407714844
+}
+2022-09-23 14:27:13,683 - trainer - INFO - start training epoch 30
+2022-09-23 14:27:13,684 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,684 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,684 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,688 - trainer - INFO - 
+*****************[epoch: 30, global step: 30] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,688 - trainer - INFO - {
+  "train_loss": 51.749756813049316
+}
+2022-09-23 14:27:13,690 - trainer - INFO - 
+*****************[epoch: 30, global step: 30] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,691 - trainer - INFO - {
+  "dev_loss": 20.126277923583984,
+  "dev_best_score_for_loss": -20.064470291137695
+}
+2022-09-23 14:27:13,691 - trainer - INFO -   no_improve_count: 4
+2022-09-23 14:27:13,692 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,693 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,693 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,693 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_24
+2022-09-23 14:27:13,694 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_30
+2022-09-23 14:27:13,697 - trainer - INFO - save model to path: model/mlp_yoke\ck_30
+2022-09-23 14:27:13,698 - trainer - INFO - 
+*****************[epoch: 30, global step: 31] eval training set at end of epoch***************
+2022-09-23 14:27:13,698 - trainer - INFO - {
+  "train_loss": 25.215959548950195
+}
+2022-09-23 14:27:13,699 - trainer - INFO - start training epoch 31
+2022-09-23 14:27:13,699 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,699 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,699 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,704 - trainer - INFO - 
+*****************[epoch: 31, global step: 32] eval training set at end of epoch***************
+2022-09-23 14:27:13,704 - trainer - INFO - {
+  "train_loss": 20.126277923583984
+}
+2022-09-23 14:27:13,704 - trainer - INFO - start training epoch 32
+2022-09-23 14:27:13,704 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,705 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,705 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,708 - trainer - INFO - 
+*****************[epoch: 32, global step: 32] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,709 - trainer - INFO - {
+  "train_loss": 40.53183937072754
+}
+2022-09-23 14:27:13,711 - trainer - INFO - 
+*****************[epoch: 32, global step: 32] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,711 - trainer - INFO - {
+  "dev_loss": 101.27375030517578,
+  "dev_best_score_for_loss": -20.064470291137695
+}
+2022-09-23 14:27:13,712 - trainer - INFO -   no_improve_count: 5
+2022-09-23 14:27:13,712 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,713 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,713 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,713 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_26
+2022-09-23 14:27:13,714 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_32
+2022-09-23 14:27:13,717 - trainer - INFO - save model to path: model/mlp_yoke\ck_32
+2022-09-23 14:27:13,718 - trainer - INFO - 
+*****************[epoch: 32, global step: 33] eval training set at end of epoch***************
+2022-09-23 14:27:13,718 - trainer - INFO - {
+  "train_loss": 60.937400817871094
+}
+2022-09-23 14:27:13,719 - trainer - INFO - start training epoch 33
+2022-09-23 14:27:13,719 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,719 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,720 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,723 - trainer - INFO - 
+*****************[epoch: 33, global step: 34] eval training set at end of epoch***************
+2022-09-23 14:27:13,724 - trainer - INFO - {
+  "train_loss": 101.27374267578125
+}
+2022-09-23 14:27:13,724 - trainer - INFO - start training epoch 34
+2022-09-23 14:27:13,724 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,724 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,725 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,728 - trainer - INFO - 
+*****************[epoch: 34, global step: 34] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,728 - trainer - INFO - {
+  "train_loss": 98.86181640625
+}
+2022-09-23 14:27:13,730 - trainer - INFO - 
+*****************[epoch: 34, global step: 34] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,731 - trainer - INFO - {
+  "dev_loss": 55.10292434692383,
+  "dev_best_score_for_loss": -20.064470291137695
+}
+2022-09-23 14:27:13,731 - trainer - INFO -   no_improve_count: 6
+2022-09-23 14:27:13,732 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,732 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,733 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,733 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_28
+2022-09-23 14:27:13,734 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_34
+2022-09-23 14:27:13,736 - trainer - INFO - save model to path: model/mlp_yoke\ck_34
+2022-09-23 14:27:13,737 - trainer - INFO - 
+*****************[epoch: 34, global step: 35] eval training set at end of epoch***************
+2022-09-23 14:27:13,737 - trainer - INFO - {
+  "train_loss": 96.44989013671875
+}
+2022-09-23 14:27:13,738 - trainer - INFO - start training epoch 35
+2022-09-23 14:27:13,738 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,738 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,738 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,741 - trainer - INFO - 
+*****************[epoch: 35, global step: 36] eval training set at end of epoch***************
+2022-09-23 14:27:13,742 - trainer - INFO - {
+  "train_loss": 55.102928161621094
+}
+2022-09-23 14:27:13,742 - trainer - INFO - start training epoch 36
+2022-09-23 14:27:13,742 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,743 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,743 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,746 - trainer - INFO - 
+*****************[epoch: 36, global step: 36] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,747 - trainer - INFO - {
+  "train_loss": 37.85642147064209
+}
+2022-09-23 14:27:13,748 - trainer - INFO - 
+*****************[epoch: 36, global step: 36] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,749 - trainer - INFO - {
+  "dev_loss": 18.058887481689453,
+  "dev_best_score_for_loss": -18.058887481689453
+}
+2022-09-23 14:27:13,749 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,750 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,750 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,751 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_30
+2022-09-23 14:27:13,752 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,754 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,754 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,754 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,755 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:13,755 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_36
+2022-09-23 14:27:13,758 - trainer - INFO - save model to path: model/mlp_yoke\ck_36
+2022-09-23 14:27:13,758 - trainer - INFO - 
+*****************[epoch: 36, global step: 37] eval training set at end of epoch***************
+2022-09-23 14:27:13,759 - trainer - INFO - {
+  "train_loss": 20.609914779663086
+}
+2022-09-23 14:27:13,759 - trainer - INFO - start training epoch 37
+2022-09-23 14:27:13,759 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,760 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,760 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,763 - trainer - INFO - 
+*****************[epoch: 37, global step: 38] eval training set at end of epoch***************
+2022-09-23 14:27:13,764 - trainer - INFO - {
+  "train_loss": 18.058889389038086
+}
+2022-09-23 14:27:13,764 - trainer - INFO - start training epoch 38
+2022-09-23 14:27:13,764 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,764 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,765 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,768 - trainer - INFO - 
+*****************[epoch: 38, global step: 38] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,768 - trainer - INFO - {
+  "train_loss": 28.231093406677246
+}
+2022-09-23 14:27:13,770 - trainer - INFO - 
+*****************[epoch: 38, global step: 38] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,771 - trainer - INFO - {
+  "dev_loss": 58.33477783203125,
+  "dev_best_score_for_loss": -18.058887481689453
+}
+2022-09-23 14:27:13,771 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:13,772 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,773 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,773 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,773 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_32
+2022-09-23 14:27:13,774 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_38
+2022-09-23 14:27:13,777 - trainer - INFO - save model to path: model/mlp_yoke\ck_38
+2022-09-23 14:27:13,777 - trainer - INFO - 
+*****************[epoch: 38, global step: 39] eval training set at end of epoch***************
+2022-09-23 14:27:13,778 - trainer - INFO - {
+  "train_loss": 38.403297424316406
+}
+2022-09-23 14:27:13,778 - trainer - INFO - start training epoch 39
+2022-09-23 14:27:13,778 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,778 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,779 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,782 - trainer - INFO - 
+*****************[epoch: 39, global step: 40] eval training set at end of epoch***************
+2022-09-23 14:27:13,783 - trainer - INFO - {
+  "train_loss": 58.334774017333984
+}
+2022-09-23 14:27:13,783 - trainer - INFO - start training epoch 40
+2022-09-23 14:27:13,783 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,783 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,784 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,787 - trainer - INFO - 
+*****************[epoch: 40, global step: 40] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,788 - trainer - INFO - {
+  "train_loss": 59.9349422454834
+}
+2022-09-23 14:27:13,790 - trainer - INFO - 
+*****************[epoch: 40, global step: 40] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,790 - trainer - INFO - {
+  "dev_loss": 46.905147552490234,
+  "dev_best_score_for_loss": -18.058887481689453
+}
+2022-09-23 14:27:13,790 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:13,791 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,792 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,792 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,792 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_34
+2022-09-23 14:27:13,793 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_40
+2022-09-23 14:27:13,795 - trainer - INFO - save model to path: model/mlp_yoke\ck_40
+2022-09-23 14:27:13,796 - trainer - INFO - 
+*****************[epoch: 40, global step: 41] eval training set at end of epoch***************
+2022-09-23 14:27:13,796 - trainer - INFO - {
+  "train_loss": 61.53511047363281
+}
+2022-09-23 14:27:13,797 - trainer - INFO - start training epoch 41
+2022-09-23 14:27:13,797 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,797 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,797 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,800 - trainer - INFO - 
+*****************[epoch: 41, global step: 42] eval training set at end of epoch***************
+2022-09-23 14:27:13,801 - trainer - INFO - {
+  "train_loss": 46.9051513671875
+}
+2022-09-23 14:27:13,801 - trainer - INFO - start training epoch 42
+2022-09-23 14:27:13,801 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,802 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,802 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,805 - trainer - INFO - 
+*****************[epoch: 42, global step: 42] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,805 - trainer - INFO - {
+  "train_loss": 36.562954902648926
+}
+2022-09-23 14:27:13,807 - trainer - INFO - 
+*****************[epoch: 42, global step: 42] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,807 - trainer - INFO - {
+  "dev_loss": 15.110825538635254,
+  "dev_best_score_for_loss": -15.110825538635254
+}
+2022-09-23 14:27:13,808 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,809 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,809 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,809 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_36
+2022-09-23 14:27:13,810 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,812 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,812 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,813 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,813 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:13,814 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_42
+2022-09-23 14:27:13,816 - trainer - INFO - save model to path: model/mlp_yoke\ck_42
+2022-09-23 14:27:13,817 - trainer - INFO - 
+*****************[epoch: 42, global step: 43] eval training set at end of epoch***************
+2022-09-23 14:27:13,817 - trainer - INFO - {
+  "train_loss": 26.22075843811035
+}
+2022-09-23 14:27:13,817 - trainer - INFO - start training epoch 43
+2022-09-23 14:27:13,818 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,818 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,818 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,822 - trainer - INFO - 
+*****************[epoch: 43, global step: 44] eval training set at end of epoch***************
+2022-09-23 14:27:13,822 - trainer - INFO - {
+  "train_loss": 15.110825538635254
+}
+2022-09-23 14:27:13,823 - trainer - INFO - start training epoch 44
+2022-09-23 14:27:13,823 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,823 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,824 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,827 - trainer - INFO - 
+*****************[epoch: 44, global step: 44] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,827 - trainer - INFO - {
+  "train_loss": 17.927330493927002
+}
+2022-09-23 14:27:13,829 - trainer - INFO - 
+*****************[epoch: 44, global step: 44] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,829 - trainer - INFO - {
+  "dev_loss": 34.58936309814453,
+  "dev_best_score_for_loss": -15.110825538635254
+}
+2022-09-23 14:27:13,830 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:13,830 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,831 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,831 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,831 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_38
+2022-09-23 14:27:13,832 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_44
+2022-09-23 14:27:13,835 - trainer - INFO - save model to path: model/mlp_yoke\ck_44
+2022-09-23 14:27:13,835 - trainer - INFO - 
+*****************[epoch: 44, global step: 45] eval training set at end of epoch***************
+2022-09-23 14:27:13,836 - trainer - INFO - {
+  "train_loss": 20.74383544921875
+}
+2022-09-23 14:27:13,836 - trainer - INFO - start training epoch 45
+2022-09-23 14:27:13,836 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,836 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,837 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,840 - trainer - INFO - 
+*****************[epoch: 45, global step: 46] eval training set at end of epoch***************
+2022-09-23 14:27:13,840 - trainer - INFO - {
+  "train_loss": 34.58936309814453
+}
+2022-09-23 14:27:13,841 - trainer - INFO - start training epoch 46
+2022-09-23 14:27:13,841 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,841 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,841 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,844 - trainer - INFO - 
+*****************[epoch: 46, global step: 46] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,845 - trainer - INFO - {
+  "train_loss": 37.5344123840332
+}
+2022-09-23 14:27:13,847 - trainer - INFO - 
+*****************[epoch: 46, global step: 46] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,847 - trainer - INFO - {
+  "dev_loss": 32.38878631591797,
+  "dev_best_score_for_loss": -15.110825538635254
+}
+2022-09-23 14:27:13,848 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:13,848 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,849 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,849 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,849 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_40
+2022-09-23 14:27:13,850 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_46
+2022-09-23 14:27:13,853 - trainer - INFO - save model to path: model/mlp_yoke\ck_46
+2022-09-23 14:27:13,853 - trainer - INFO - 
+*****************[epoch: 46, global step: 47] eval training set at end of epoch***************
+2022-09-23 14:27:13,854 - trainer - INFO - {
+  "train_loss": 40.479461669921875
+}
+2022-09-23 14:27:13,854 - trainer - INFO - start training epoch 47
+2022-09-23 14:27:13,854 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,854 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,855 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,858 - trainer - INFO - 
+*****************[epoch: 47, global step: 48] eval training set at end of epoch***************
+2022-09-23 14:27:13,859 - trainer - INFO - {
+  "train_loss": 32.38878631591797
+}
+2022-09-23 14:27:13,859 - trainer - INFO - start training epoch 48
+2022-09-23 14:27:13,860 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,860 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,860 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,864 - trainer - INFO - 
+*****************[epoch: 48, global step: 48] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,864 - trainer - INFO - {
+  "train_loss": 26.089073181152344
+}
+2022-09-23 14:27:13,867 - trainer - INFO - 
+*****************[epoch: 48, global step: 48] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,867 - trainer - INFO - {
+  "dev_loss": 14.65439510345459,
+  "dev_best_score_for_loss": -14.65439510345459
+}
+2022-09-23 14:27:13,868 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,869 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,869 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,869 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_42
+2022-09-23 14:27:13,870 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,873 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,873 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,873 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,874 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:13,874 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_48
+2022-09-23 14:27:13,877 - trainer - INFO - save model to path: model/mlp_yoke\ck_48
+2022-09-23 14:27:13,878 - trainer - INFO - 
+*****************[epoch: 48, global step: 49] eval training set at end of epoch***************
+2022-09-23 14:27:13,878 - trainer - INFO - {
+  "train_loss": 19.78936004638672
+}
+2022-09-23 14:27:13,878 - trainer - INFO - start training epoch 49
+2022-09-23 14:27:13,879 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,879 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,879 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,883 - trainer - INFO - 
+*****************[epoch: 49, global step: 50] eval training set at end of epoch***************
+2022-09-23 14:27:13,883 - trainer - INFO - {
+  "train_loss": 14.65439510345459
+}
+2022-09-23 14:27:13,883 - trainer - INFO - start training epoch 50
+2022-09-23 14:27:13,884 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,884 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,884 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,887 - trainer - INFO - 
+*****************[epoch: 50, global step: 50] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,887 - trainer - INFO - {
+  "train_loss": 16.86295747756958
+}
+2022-09-23 14:27:13,890 - trainer - INFO - 
+*****************[epoch: 50, global step: 50] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,890 - trainer - INFO - {
+  "dev_loss": 26.171796798706055,
+  "dev_best_score_for_loss": -14.65439510345459
+}
+2022-09-23 14:27:13,890 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:13,891 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,891 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,892 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,892 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_44
+2022-09-23 14:27:13,893 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_50
+2022-09-23 14:27:13,896 - trainer - INFO - save model to path: model/mlp_yoke\ck_50
+2022-09-23 14:27:13,896 - trainer - INFO - 
+*****************[epoch: 50, global step: 51] eval training set at end of epoch***************
+2022-09-23 14:27:13,897 - trainer - INFO - {
+  "train_loss": 19.07151985168457
+}
+2022-09-23 14:27:13,897 - trainer - INFO - start training epoch 51
+2022-09-23 14:27:13,897 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,897 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,898 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,901 - trainer - INFO - 
+*****************[epoch: 51, global step: 52] eval training set at end of epoch***************
+2022-09-23 14:27:13,902 - trainer - INFO - {
+  "train_loss": 26.171796798706055
+}
+2022-09-23 14:27:13,902 - trainer - INFO - start training epoch 52
+2022-09-23 14:27:13,902 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,903 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,903 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,906 - trainer - INFO - 
+*****************[epoch: 52, global step: 52] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,906 - trainer - INFO - {
+  "train_loss": 27.339460372924805
+}
+2022-09-23 14:27:13,909 - trainer - INFO - 
+*****************[epoch: 52, global step: 52] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,909 - trainer - INFO - {
+  "dev_loss": 24.244352340698242,
+  "dev_best_score_for_loss": -14.65439510345459
+}
+2022-09-23 14:27:13,910 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:13,910 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,911 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,911 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,911 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_46
+2022-09-23 14:27:13,912 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_52
+2022-09-23 14:27:13,915 - trainer - INFO - save model to path: model/mlp_yoke\ck_52
+2022-09-23 14:27:13,915 - trainer - INFO - 
+*****************[epoch: 52, global step: 53] eval training set at end of epoch***************
+2022-09-23 14:27:13,915 - trainer - INFO - {
+  "train_loss": 28.507123947143555
+}
+2022-09-23 14:27:13,916 - trainer - INFO - start training epoch 53
+2022-09-23 14:27:13,916 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,916 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,916 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,920 - trainer - INFO - 
+*****************[epoch: 53, global step: 54] eval training set at end of epoch***************
+2022-09-23 14:27:13,920 - trainer - INFO - {
+  "train_loss": 24.244352340698242
+}
+2022-09-23 14:27:13,920 - trainer - INFO - start training epoch 54
+2022-09-23 14:27:13,920 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,921 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,921 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,924 - trainer - INFO - 
+*****************[epoch: 54, global step: 54] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,924 - trainer - INFO - {
+  "train_loss": 20.904494285583496
+}
+2022-09-23 14:27:13,926 - trainer - INFO - 
+*****************[epoch: 54, global step: 54] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,927 - trainer - INFO - {
+  "dev_loss": 14.361462593078613,
+  "dev_best_score_for_loss": -14.361462593078613
+}
+2022-09-23 14:27:13,927 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,928 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,928 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,929 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_48
+2022-09-23 14:27:13,929 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,931 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,931 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,932 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,932 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:13,933 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_54
+2022-09-23 14:27:13,935 - trainer - INFO - save model to path: model/mlp_yoke\ck_54
+2022-09-23 14:27:13,936 - trainer - INFO - 
+*****************[epoch: 54, global step: 55] eval training set at end of epoch***************
+2022-09-23 14:27:13,936 - trainer - INFO - {
+  "train_loss": 17.56463623046875
+}
+2022-09-23 14:27:13,936 - trainer - INFO - start training epoch 55
+2022-09-23 14:27:13,937 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,937 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,937 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,941 - trainer - INFO - 
+*****************[epoch: 55, global step: 56] eval training set at end of epoch***************
+2022-09-23 14:27:13,942 - trainer - INFO - {
+  "train_loss": 14.361462593078613
+}
+2022-09-23 14:27:13,942 - trainer - INFO - start training epoch 56
+2022-09-23 14:27:13,942 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,942 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,943 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,946 - trainer - INFO - 
+*****************[epoch: 56, global step: 56] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,946 - trainer - INFO - {
+  "train_loss": 15.53299856185913
+}
+2022-09-23 14:27:13,948 - trainer - INFO - 
+*****************[epoch: 56, global step: 56] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,948 - trainer - INFO - {
+  "dev_loss": 20.928319931030273,
+  "dev_best_score_for_loss": -14.361462593078613
+}
+2022-09-23 14:27:13,949 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:13,949 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,950 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,950 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,950 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_50
+2022-09-23 14:27:13,951 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_56
+2022-09-23 14:27:13,955 - trainer - INFO - save model to path: model/mlp_yoke\ck_56
+2022-09-23 14:27:13,955 - trainer - INFO - 
+*****************[epoch: 56, global step: 57] eval training set at end of epoch***************
+2022-09-23 14:27:13,955 - trainer - INFO - {
+  "train_loss": 16.70453453063965
+}
+2022-09-23 14:27:13,956 - trainer - INFO - start training epoch 57
+2022-09-23 14:27:13,956 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,956 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,957 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,960 - trainer - INFO - 
+*****************[epoch: 57, global step: 58] eval training set at end of epoch***************
+2022-09-23 14:27:13,960 - trainer - INFO - {
+  "train_loss": 20.928319931030273
+}
+2022-09-23 14:27:13,961 - trainer - INFO - start training epoch 58
+2022-09-23 14:27:13,961 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,961 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,961 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,964 - trainer - INFO - 
+*****************[epoch: 58, global step: 58] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,965 - trainer - INFO - {
+  "train_loss": 21.38467502593994
+}
+2022-09-23 14:27:13,967 - trainer - INFO - 
+*****************[epoch: 58, global step: 58] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,967 - trainer - INFO - {
+  "dev_loss": 18.57187843322754,
+  "dev_best_score_for_loss": -14.361462593078613
+}
+2022-09-23 14:27:13,968 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:13,968 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,970 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,970 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,970 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_52
+2022-09-23 14:27:13,971 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_58
+2022-09-23 14:27:13,974 - trainer - INFO - save model to path: model/mlp_yoke\ck_58
+2022-09-23 14:27:13,975 - trainer - INFO - 
+*****************[epoch: 58, global step: 59] eval training set at end of epoch***************
+2022-09-23 14:27:13,975 - trainer - INFO - {
+  "train_loss": 21.84103012084961
+}
+2022-09-23 14:27:13,975 - trainer - INFO - start training epoch 59
+2022-09-23 14:27:13,976 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,976 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,976 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,979 - trainer - INFO - 
+*****************[epoch: 59, global step: 60] eval training set at end of epoch***************
+2022-09-23 14:27:13,980 - trainer - INFO - {
+  "train_loss": 18.571880340576172
+}
+2022-09-23 14:27:13,980 - trainer - INFO - start training epoch 60
+2022-09-23 14:27:13,980 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:13,981 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:13,981 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:13,984 - trainer - INFO - 
+*****************[epoch: 60, global step: 60] eval training set based on eval_every=2***************
+2022-09-23 14:27:13,985 - trainer - INFO - {
+  "train_loss": 16.73122787475586
+}
+2022-09-23 14:27:13,987 - trainer - INFO - 
+*****************[epoch: 60, global step: 60] eval development set based on eval_every=2***************
+2022-09-23 14:27:13,987 - trainer - INFO - {
+  "dev_loss": 14.260503768920898,
+  "dev_best_score_for_loss": -14.260503768920898
+}
+2022-09-23 14:27:13,988 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:13,989 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:13,989 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:13,989 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_54
+2022-09-23 14:27:13,990 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:13,992 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:13,993 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:13,993 - trainer - INFO -   patience: 200
+2022-09-23 14:27:13,994 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:13,994 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_60
+2022-09-23 14:27:13,998 - trainer - INFO - save model to path: model/mlp_yoke\ck_60
+2022-09-23 14:27:13,998 - trainer - INFO - 
+*****************[epoch: 60, global step: 61] eval training set at end of epoch***************
+2022-09-23 14:27:13,999 - trainer - INFO - {
+  "train_loss": 14.890575408935547
+}
+2022-09-23 14:27:13,999 - trainer - INFO - start training epoch 61
+2022-09-23 14:27:13,999 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,000 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,000 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,005 - trainer - INFO - 
+*****************[epoch: 61, global step: 62] eval training set at end of epoch***************
+2022-09-23 14:27:14,005 - trainer - INFO - {
+  "train_loss": 14.260503768920898
+}
+2022-09-23 14:27:14,006 - trainer - INFO - start training epoch 62
+2022-09-23 14:27:14,006 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,006 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,006 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,010 - trainer - INFO - 
+*****************[epoch: 62, global step: 62] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,011 - trainer - INFO - {
+  "train_loss": 15.297616958618164
+}
+2022-09-23 14:27:14,013 - trainer - INFO - 
+*****************[epoch: 62, global step: 62] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,014 - trainer - INFO - {
+  "dev_loss": 18.209957122802734,
+  "dev_best_score_for_loss": -14.260503768920898
+}
+2022-09-23 14:27:14,014 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:14,015 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,016 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,016 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,016 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_56
+2022-09-23 14:27:14,017 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_62
+2022-09-23 14:27:14,021 - trainer - INFO - save model to path: model/mlp_yoke\ck_62
+2022-09-23 14:27:14,021 - trainer - INFO - 
+*****************[epoch: 62, global step: 63] eval training set at end of epoch***************
+2022-09-23 14:27:14,022 - trainer - INFO - {
+  "train_loss": 16.33473014831543
+}
+2022-09-23 14:27:14,022 - trainer - INFO - start training epoch 63
+2022-09-23 14:27:14,022 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,023 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,023 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,027 - trainer - INFO - 
+*****************[epoch: 63, global step: 64] eval training set at end of epoch***************
+2022-09-23 14:27:14,027 - trainer - INFO - {
+  "train_loss": 18.209957122802734
+}
+2022-09-23 14:27:14,028 - trainer - INFO - start training epoch 64
+2022-09-23 14:27:14,028 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,028 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,029 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,032 - trainer - INFO - 
+*****************[epoch: 64, global step: 64] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,033 - trainer - INFO - {
+  "train_loss": 18.001975059509277
+}
+2022-09-23 14:27:14,036 - trainer - INFO - 
+*****************[epoch: 64, global step: 64] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,036 - trainer - INFO - {
+  "dev_loss": 15.624445915222168,
+  "dev_best_score_for_loss": -14.260503768920898
+}
+2022-09-23 14:27:14,037 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:14,037 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,038 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,038 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,038 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_58
+2022-09-23 14:27:14,040 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_64
+2022-09-23 14:27:14,043 - trainer - INFO - save model to path: model/mlp_yoke\ck_64
+2022-09-23 14:27:14,044 - trainer - INFO - 
+*****************[epoch: 64, global step: 65] eval training set at end of epoch***************
+2022-09-23 14:27:14,044 - trainer - INFO - {
+  "train_loss": 17.79399299621582
+}
+2022-09-23 14:27:14,044 - trainer - INFO - start training epoch 65
+2022-09-23 14:27:14,045 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,045 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,045 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,049 - trainer - INFO - 
+*****************[epoch: 65, global step: 66] eval training set at end of epoch***************
+2022-09-23 14:27:14,049 - trainer - INFO - {
+  "train_loss": 15.624445915222168
+}
+2022-09-23 14:27:14,050 - trainer - INFO - start training epoch 66
+2022-09-23 14:27:14,050 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,050 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,051 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,054 - trainer - INFO - 
+*****************[epoch: 66, global step: 66] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,054 - trainer - INFO - {
+  "train_loss": 14.772399425506592
+}
+2022-09-23 14:27:14,057 - trainer - INFO - 
+*****************[epoch: 66, global step: 66] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,057 - trainer - INFO - {
+  "dev_loss": 14.141592979431152,
+  "dev_best_score_for_loss": -14.141592979431152
+}
+2022-09-23 14:27:14,058 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,059 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,059 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,059 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_60
+2022-09-23 14:27:14,060 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,062 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,062 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,062 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,063 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,063 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_66
+2022-09-23 14:27:14,065 - trainer - INFO - save model to path: model/mlp_yoke\ck_66
+2022-09-23 14:27:14,066 - trainer - INFO - 
+*****************[epoch: 66, global step: 67] eval training set at end of epoch***************
+2022-09-23 14:27:14,066 - trainer - INFO - {
+  "train_loss": 13.920352935791016
+}
+2022-09-23 14:27:14,067 - trainer - INFO - start training epoch 67
+2022-09-23 14:27:14,067 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,067 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,067 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,071 - trainer - INFO - 
+*****************[epoch: 67, global step: 68] eval training set at end of epoch***************
+2022-09-23 14:27:14,071 - trainer - INFO - {
+  "train_loss": 14.141592025756836
+}
+2022-09-23 14:27:14,072 - trainer - INFO - start training epoch 68
+2022-09-23 14:27:14,072 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,072 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,073 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,076 - trainer - INFO - 
+*****************[epoch: 68, global step: 68] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,076 - trainer - INFO - {
+  "train_loss": 14.833343505859375
+}
+2022-09-23 14:27:14,078 - trainer - INFO - 
+*****************[epoch: 68, global step: 68] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,078 - trainer - INFO - {
+  "dev_loss": 16.148351669311523,
+  "dev_best_score_for_loss": -14.141592979431152
+}
+2022-09-23 14:27:14,079 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:14,079 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,080 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,080 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,080 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_62
+2022-09-23 14:27:14,082 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_68
+2022-09-23 14:27:14,084 - trainer - INFO - save model to path: model/mlp_yoke\ck_68
+2022-09-23 14:27:14,085 - trainer - INFO - 
+*****************[epoch: 68, global step: 69] eval training set at end of epoch***************
+2022-09-23 14:27:14,085 - trainer - INFO - {
+  "train_loss": 15.525094985961914
+}
+2022-09-23 14:27:14,086 - trainer - INFO - start training epoch 69
+2022-09-23 14:27:14,086 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,086 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,086 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,090 - trainer - INFO - 
+*****************[epoch: 69, global step: 70] eval training set at end of epoch***************
+2022-09-23 14:27:14,090 - trainer - INFO - {
+  "train_loss": 16.148351669311523
+}
+2022-09-23 14:27:14,091 - trainer - INFO - start training epoch 70
+2022-09-23 14:27:14,091 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,091 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,091 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,095 - trainer - INFO - 
+*****************[epoch: 70, global step: 70] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,095 - trainer - INFO - {
+  "train_loss": 15.695607662200928
+}
+2022-09-23 14:27:14,097 - trainer - INFO - 
+*****************[epoch: 70, global step: 70] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,097 - trainer - INFO - {
+  "dev_loss": 13.897582054138184,
+  "dev_best_score_for_loss": -13.897582054138184
+}
+2022-09-23 14:27:14,098 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,099 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,099 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,099 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_64
+2022-09-23 14:27:14,100 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,103 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,103 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,103 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,104 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,104 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_70
+2022-09-23 14:27:14,107 - trainer - INFO - save model to path: model/mlp_yoke\ck_70
+2022-09-23 14:27:14,108 - trainer - INFO - 
+*****************[epoch: 70, global step: 71] eval training set at end of epoch***************
+2022-09-23 14:27:14,108 - trainer - INFO - {
+  "train_loss": 15.242863655090332
+}
+2022-09-23 14:27:14,108 - trainer - INFO - start training epoch 71
+2022-09-23 14:27:14,109 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,109 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,109 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,112 - trainer - INFO - 
+*****************[epoch: 71, global step: 72] eval training set at end of epoch***************
+2022-09-23 14:27:14,113 - trainer - INFO - {
+  "train_loss": 13.897581100463867
+}
+2022-09-23 14:27:14,113 - trainer - INFO - start training epoch 72
+2022-09-23 14:27:14,113 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,114 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,114 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,118 - trainer - INFO - 
+*****************[epoch: 72, global step: 72] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,118 - trainer - INFO - {
+  "train_loss": 13.696430206298828
+}
+2022-09-23 14:27:14,120 - trainer - INFO - 
+*****************[epoch: 72, global step: 72] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,121 - trainer - INFO - {
+  "dev_loss": 14.122480392456055,
+  "dev_best_score_for_loss": -13.897582054138184
+}
+2022-09-23 14:27:14,121 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:14,122 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,123 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,123 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,123 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_66
+2022-09-23 14:27:14,124 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_72
+2022-09-23 14:27:14,127 - trainer - INFO - save model to path: model/mlp_yoke\ck_72
+2022-09-23 14:27:14,127 - trainer - INFO - 
+*****************[epoch: 72, global step: 73] eval training set at end of epoch***************
+2022-09-23 14:27:14,128 - trainer - INFO - {
+  "train_loss": 13.495279312133789
+}
+2022-09-23 14:27:14,128 - trainer - INFO - start training epoch 73
+2022-09-23 14:27:14,128 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,128 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,129 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,132 - trainer - INFO - 
+*****************[epoch: 73, global step: 74] eval training set at end of epoch***************
+2022-09-23 14:27:14,132 - trainer - INFO - {
+  "train_loss": 14.122480392456055
+}
+2022-09-23 14:27:14,133 - trainer - INFO - start training epoch 74
+2022-09-23 14:27:14,133 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,133 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,133 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,137 - trainer - INFO - 
+*****************[epoch: 74, global step: 74] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,137 - trainer - INFO - {
+  "train_loss": 14.435588836669922
+}
+2022-09-23 14:27:14,139 - trainer - INFO - 
+*****************[epoch: 74, global step: 74] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,139 - trainer - INFO - {
+  "dev_loss": 14.552183151245117,
+  "dev_best_score_for_loss": -13.897582054138184
+}
+2022-09-23 14:27:14,140 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:14,140 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,141 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,141 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,142 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_68
+2022-09-23 14:27:14,143 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_74
+2022-09-23 14:27:14,145 - trainer - INFO - save model to path: model/mlp_yoke\ck_74
+2022-09-23 14:27:14,146 - trainer - INFO - 
+*****************[epoch: 74, global step: 75] eval training set at end of epoch***************
+2022-09-23 14:27:14,146 - trainer - INFO - {
+  "train_loss": 14.748697280883789
+}
+2022-09-23 14:27:14,146 - trainer - INFO - start training epoch 75
+2022-09-23 14:27:14,146 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,147 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,147 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,151 - trainer - INFO - 
+*****************[epoch: 75, global step: 76] eval training set at end of epoch***************
+2022-09-23 14:27:14,151 - trainer - INFO - {
+  "train_loss": 14.552184104919434
+}
+2022-09-23 14:27:14,151 - trainer - INFO - start training epoch 76
+2022-09-23 14:27:14,151 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,152 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,152 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,155 - trainer - INFO - 
+*****************[epoch: 76, global step: 76] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,156 - trainer - INFO - {
+  "train_loss": 14.15151309967041
+}
+2022-09-23 14:27:14,158 - trainer - INFO - 
+*****************[epoch: 76, global step: 76] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,158 - trainer - INFO - {
+  "dev_loss": 13.195054054260254,
+  "dev_best_score_for_loss": -13.195054054260254
+}
+2022-09-23 14:27:14,159 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,160 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,160 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,160 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_70
+2022-09-23 14:27:14,161 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,163 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,163 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,163 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,164 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,164 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_76
+2022-09-23 14:27:14,168 - trainer - INFO - save model to path: model/mlp_yoke\ck_76
+2022-09-23 14:27:14,168 - trainer - INFO - 
+*****************[epoch: 76, global step: 77] eval training set at end of epoch***************
+2022-09-23 14:27:14,169 - trainer - INFO - {
+  "train_loss": 13.750842094421387
+}
+2022-09-23 14:27:14,169 - trainer - INFO - start training epoch 77
+2022-09-23 14:27:14,169 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,169 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,170 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,173 - trainer - INFO - 
+*****************[epoch: 77, global step: 78] eval training set at end of epoch***************
+2022-09-23 14:27:14,173 - trainer - INFO - {
+  "train_loss": 13.195054054260254
+}
+2022-09-23 14:27:14,174 - trainer - INFO - start training epoch 78
+2022-09-23 14:27:14,174 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,175 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,175 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,178 - trainer - INFO - 
+*****************[epoch: 78, global step: 78] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,178 - trainer - INFO - {
+  "train_loss": 13.266904830932617
+}
+2022-09-23 14:27:14,180 - trainer - INFO - 
+*****************[epoch: 78, global step: 78] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,180 - trainer - INFO - {
+  "dev_loss": 13.775632858276367,
+  "dev_best_score_for_loss": -13.195054054260254
+}
+2022-09-23 14:27:14,181 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:14,181 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,182 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,183 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,183 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_72
+2022-09-23 14:27:14,184 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_78
+2022-09-23 14:27:14,187 - trainer - INFO - save model to path: model/mlp_yoke\ck_78
+2022-09-23 14:27:14,188 - trainer - INFO - 
+*****************[epoch: 78, global step: 79] eval training set at end of epoch***************
+2022-09-23 14:27:14,188 - trainer - INFO - {
+  "train_loss": 13.33875560760498
+}
+2022-09-23 14:27:14,189 - trainer - INFO - start training epoch 79
+2022-09-23 14:27:14,189 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,189 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,190 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,194 - trainer - INFO - 
+*****************[epoch: 79, global step: 80] eval training set at end of epoch***************
+2022-09-23 14:27:14,194 - trainer - INFO - {
+  "train_loss": 13.775632858276367
+}
+2022-09-23 14:27:14,195 - trainer - INFO - start training epoch 80
+2022-09-23 14:27:14,195 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,195 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,195 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,200 - trainer - INFO - 
+*****************[epoch: 80, global step: 80] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,200 - trainer - INFO - {
+  "train_loss": 13.800832271575928
+}
+2022-09-23 14:27:14,203 - trainer - INFO - 
+*****************[epoch: 80, global step: 80] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,203 - trainer - INFO - {
+  "dev_loss": 13.381213188171387,
+  "dev_best_score_for_loss": -13.195054054260254
+}
+2022-09-23 14:27:14,204 - trainer - INFO -   no_improve_count: 2
+2022-09-23 14:27:14,204 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,205 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,206 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,206 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_74
+2022-09-23 14:27:14,207 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_80
+2022-09-23 14:27:14,211 - trainer - INFO - save model to path: model/mlp_yoke\ck_80
+2022-09-23 14:27:14,211 - trainer - INFO - 
+*****************[epoch: 80, global step: 81] eval training set at end of epoch***************
+2022-09-23 14:27:14,212 - trainer - INFO - {
+  "train_loss": 13.826031684875488
+}
+2022-09-23 14:27:14,212 - trainer - INFO - start training epoch 81
+2022-09-23 14:27:14,212 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,213 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,213 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,217 - trainer - INFO - 
+*****************[epoch: 81, global step: 82] eval training set at end of epoch***************
+2022-09-23 14:27:14,217 - trainer - INFO - {
+  "train_loss": 13.381213188171387
+}
+2022-09-23 14:27:14,217 - trainer - INFO - start training epoch 82
+2022-09-23 14:27:14,218 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,218 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,218 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,221 - trainer - INFO - 
+*****************[epoch: 82, global step: 82] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,222 - trainer - INFO - {
+  "train_loss": 13.16038703918457
+}
+2022-09-23 14:27:14,224 - trainer - INFO - 
+*****************[epoch: 82, global step: 82] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,224 - trainer - INFO - {
+  "dev_loss": 12.907036781311035,
+  "dev_best_score_for_loss": -12.907036781311035
+}
+2022-09-23 14:27:14,225 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,226 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,226 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,226 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_76
+2022-09-23 14:27:14,227 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,229 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,230 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,230 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,231 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,231 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_82
+2022-09-23 14:27:14,234 - trainer - INFO - save model to path: model/mlp_yoke\ck_82
+2022-09-23 14:27:14,234 - trainer - INFO - 
+*****************[epoch: 82, global step: 83] eval training set at end of epoch***************
+2022-09-23 14:27:14,234 - trainer - INFO - {
+  "train_loss": 12.939560890197754
+}
+2022-09-23 14:27:14,235 - trainer - INFO - start training epoch 83
+2022-09-23 14:27:14,235 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,235 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,235 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,239 - trainer - INFO - 
+*****************[epoch: 83, global step: 84] eval training set at end of epoch***************
+2022-09-23 14:27:14,240 - trainer - INFO - {
+  "train_loss": 12.907037734985352
+}
+2022-09-23 14:27:14,240 - trainer - INFO - start training epoch 84
+2022-09-23 14:27:14,240 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,240 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,241 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,244 - trainer - INFO - 
+*****************[epoch: 84, global step: 84] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,244 - trainer - INFO - {
+  "train_loss": 13.023561954498291
+}
+2022-09-23 14:27:14,247 - trainer - INFO - 
+*****************[epoch: 84, global step: 84] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,247 - trainer - INFO - {
+  "dev_loss": 13.218671798706055,
+  "dev_best_score_for_loss": -12.907036781311035
+}
+2022-09-23 14:27:14,248 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:14,248 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,249 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,249 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,249 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_78
+2022-09-23 14:27:14,251 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_84
+2022-09-23 14:27:14,254 - trainer - INFO - save model to path: model/mlp_yoke\ck_84
+2022-09-23 14:27:14,254 - trainer - INFO - 
+*****************[epoch: 84, global step: 85] eval training set at end of epoch***************
+2022-09-23 14:27:14,255 - trainer - INFO - {
+  "train_loss": 13.14008617401123
+}
+2022-09-23 14:27:14,255 - trainer - INFO - start training epoch 85
+2022-09-23 14:27:14,255 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,255 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,256 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,260 - trainer - INFO - 
+*****************[epoch: 85, global step: 86] eval training set at end of epoch***************
+2022-09-23 14:27:14,260 - trainer - INFO - {
+  "train_loss": 13.218671798706055
+}
+2022-09-23 14:27:14,260 - trainer - INFO - start training epoch 86
+2022-09-23 14:27:14,261 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,261 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,261 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,264 - trainer - INFO - 
+*****************[epoch: 86, global step: 86] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,265 - trainer - INFO - {
+  "train_loss": 13.100199699401855
+}
+2022-09-23 14:27:14,267 - trainer - INFO - 
+*****************[epoch: 86, global step: 86] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,267 - trainer - INFO - {
+  "dev_loss": 12.667159080505371,
+  "dev_best_score_for_loss": -12.667159080505371
+}
+2022-09-23 14:27:14,268 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,269 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,269 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,269 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_80
+2022-09-23 14:27:14,270 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,272 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,273 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,273 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,274 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,274 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_86
+2022-09-23 14:27:14,277 - trainer - INFO - save model to path: model/mlp_yoke\ck_86
+2022-09-23 14:27:14,277 - trainer - INFO - 
+*****************[epoch: 86, global step: 87] eval training set at end of epoch***************
+2022-09-23 14:27:14,278 - trainer - INFO - {
+  "train_loss": 12.981727600097656
+}
+2022-09-23 14:27:14,278 - trainer - INFO - start training epoch 87
+2022-09-23 14:27:14,278 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,278 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,279 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,282 - trainer - INFO - 
+*****************[epoch: 87, global step: 88] eval training set at end of epoch***************
+2022-09-23 14:27:14,283 - trainer - INFO - {
+  "train_loss": 12.667160034179688
+}
+2022-09-23 14:27:14,283 - trainer - INFO - start training epoch 88
+2022-09-23 14:27:14,284 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,284 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,284 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,287 - trainer - INFO - 
+*****************[epoch: 88, global step: 88] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,288 - trainer - INFO - {
+  "train_loss": 12.61748743057251
+}
+2022-09-23 14:27:14,290 - trainer - INFO - 
+*****************[epoch: 88, global step: 88] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,290 - trainer - INFO - {
+  "dev_loss": 12.673837661743164,
+  "dev_best_score_for_loss": -12.667159080505371
+}
+2022-09-23 14:27:14,291 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:14,291 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,292 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,292 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,292 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_82
+2022-09-23 14:27:14,293 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_88
+2022-09-23 14:27:14,296 - trainer - INFO - save model to path: model/mlp_yoke\ck_88
+2022-09-23 14:27:14,296 - trainer - INFO - 
+*****************[epoch: 88, global step: 89] eval training set at end of epoch***************
+2022-09-23 14:27:14,297 - trainer - INFO - {
+  "train_loss": 12.567814826965332
+}
+2022-09-23 14:27:14,297 - trainer - INFO - start training epoch 89
+2022-09-23 14:27:14,297 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,298 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,298 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,302 - trainer - INFO - 
+*****************[epoch: 89, global step: 90] eval training set at end of epoch***************
+2022-09-23 14:27:14,302 - trainer - INFO - {
+  "train_loss": 12.673837661743164
+}
+2022-09-23 14:27:14,302 - trainer - INFO - start training epoch 90
+2022-09-23 14:27:14,302 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,303 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,303 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,306 - trainer - INFO - 
+*****************[epoch: 90, global step: 90] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,307 - trainer - INFO - {
+  "train_loss": 12.701399803161621
+}
+2022-09-23 14:27:14,308 - trainer - INFO - 
+*****************[epoch: 90, global step: 90] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,309 - trainer - INFO - {
+  "dev_loss": 12.58407211303711,
+  "dev_best_score_for_loss": -12.58407211303711
+}
+2022-09-23 14:27:14,309 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,310 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,310 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,310 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_84
+2022-09-23 14:27:14,312 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,314 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,314 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,314 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,315 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,315 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_90
+2022-09-23 14:27:14,318 - trainer - INFO - save model to path: model/mlp_yoke\ck_90
+2022-09-23 14:27:14,319 - trainer - INFO - 
+*****************[epoch: 90, global step: 91] eval training set at end of epoch***************
+2022-09-23 14:27:14,319 - trainer - INFO - {
+  "train_loss": 12.728961944580078
+}
+2022-09-23 14:27:14,319 - trainer - INFO - start training epoch 91
+2022-09-23 14:27:14,320 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,320 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,320 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,324 - trainer - INFO - 
+*****************[epoch: 91, global step: 92] eval training set at end of epoch***************
+2022-09-23 14:27:14,324 - trainer - INFO - {
+  "train_loss": 12.58407211303711
+}
+2022-09-23 14:27:14,324 - trainer - INFO - start training epoch 92
+2022-09-23 14:27:14,325 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,325 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,325 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,328 - trainer - INFO - 
+*****************[epoch: 92, global step: 92] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,329 - trainer - INFO - {
+  "train_loss": 12.47453498840332
+}
+2022-09-23 14:27:14,331 - trainer - INFO - 
+*****************[epoch: 92, global step: 92] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,331 - trainer - INFO - {
+  "dev_loss": 12.267962455749512,
+  "dev_best_score_for_loss": -12.267962455749512
+}
+2022-09-23 14:27:14,332 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,333 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,333 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,333 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_86
+2022-09-23 14:27:14,334 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,337 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,337 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,337 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,338 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,338 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_92
+2022-09-23 14:27:14,341 - trainer - INFO - save model to path: model/mlp_yoke\ck_92
+2022-09-23 14:27:14,341 - trainer - INFO - 
+*****************[epoch: 92, global step: 93] eval training set at end of epoch***************
+2022-09-23 14:27:14,342 - trainer - INFO - {
+  "train_loss": 12.364997863769531
+}
+2022-09-23 14:27:14,342 - trainer - INFO - start training epoch 93
+2022-09-23 14:27:14,342 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,342 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,343 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,346 - trainer - INFO - 
+*****************[epoch: 93, global step: 94] eval training set at end of epoch***************
+2022-09-23 14:27:14,346 - trainer - INFO - {
+  "train_loss": 12.267961502075195
+}
+2022-09-23 14:27:14,347 - trainer - INFO - start training epoch 94
+2022-09-23 14:27:14,347 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,347 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,347 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,350 - trainer - INFO - 
+*****************[epoch: 94, global step: 94] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,351 - trainer - INFO - {
+  "train_loss": 12.285932540893555
+}
+2022-09-23 14:27:14,353 - trainer - INFO - 
+*****************[epoch: 94, global step: 94] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,353 - trainer - INFO - {
+  "dev_loss": 12.319546699523926,
+  "dev_best_score_for_loss": -12.267962455749512
+}
+2022-09-23 14:27:14,354 - trainer - INFO -   no_improve_count: 1
+2022-09-23 14:27:14,354 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,355 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,355 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,355 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_88
+2022-09-23 14:27:14,356 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_94
+2022-09-23 14:27:14,359 - trainer - INFO - save model to path: model/mlp_yoke\ck_94
+2022-09-23 14:27:14,360 - trainer - INFO - 
+*****************[epoch: 94, global step: 95] eval training set at end of epoch***************
+2022-09-23 14:27:14,360 - trainer - INFO - {
+  "train_loss": 12.303903579711914
+}
+2022-09-23 14:27:14,361 - trainer - INFO - start training epoch 95
+2022-09-23 14:27:14,361 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,361 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,361 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,364 - trainer - INFO - 
+*****************[epoch: 95, global step: 96] eval training set at end of epoch***************
+2022-09-23 14:27:14,365 - trainer - INFO - {
+  "train_loss": 12.31954574584961
+}
+2022-09-23 14:27:14,365 - trainer - INFO - start training epoch 96
+2022-09-23 14:27:14,365 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,365 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,366 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,369 - trainer - INFO - 
+*****************[epoch: 96, global step: 96] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,369 - trainer - INFO - {
+  "train_loss": 12.26759147644043
+}
+2022-09-23 14:27:14,371 - trainer - INFO - 
+*****************[epoch: 96, global step: 96] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,371 - trainer - INFO - {
+  "dev_loss": 12.059563636779785,
+  "dev_best_score_for_loss": -12.059563636779785
+}
+2022-09-23 14:27:14,372 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,373 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,373 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,373 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_90
+2022-09-23 14:27:14,374 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,376 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,377 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,377 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,377 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,378 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_96
+2022-09-23 14:27:14,380 - trainer - INFO - save model to path: model/mlp_yoke\ck_96
+2022-09-23 14:27:14,380 - trainer - INFO - 
+*****************[epoch: 96, global step: 97] eval training set at end of epoch***************
+2022-09-23 14:27:14,381 - trainer - INFO - {
+  "train_loss": 12.21563720703125
+}
+2022-09-23 14:27:14,381 - trainer - INFO - start training epoch 97
+2022-09-23 14:27:14,381 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,382 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,382 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,385 - trainer - INFO - 
+*****************[epoch: 97, global step: 98] eval training set at end of epoch***************
+2022-09-23 14:27:14,386 - trainer - INFO - {
+  "train_loss": 12.059564590454102
+}
+2022-09-23 14:27:14,386 - trainer - INFO - start training epoch 98
+2022-09-23 14:27:14,386 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,387 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,387 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,390 - trainer - INFO - 
+*****************[epoch: 98, global step: 98] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,391 - trainer - INFO - {
+  "train_loss": 12.016403198242188
+}
+2022-09-23 14:27:14,393 - trainer - INFO - 
+*****************[epoch: 98, global step: 98] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,393 - trainer - INFO - {
+  "dev_loss": 11.970932960510254,
+  "dev_best_score_for_loss": -11.970932960510254
+}
+2022-09-23 14:27:14,394 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,395 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,395 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,395 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_92
+2022-09-23 14:27:14,396 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,398 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,398 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,398 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,399 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,399 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_98
+2022-09-23 14:27:14,402 - trainer - INFO - save model to path: model/mlp_yoke\ck_98
+2022-09-23 14:27:14,403 - trainer - INFO - 
+*****************[epoch: 98, global step: 99] eval training set at end of epoch***************
+2022-09-23 14:27:14,403 - trainer - INFO - {
+  "train_loss": 11.973241806030273
+}
+2022-09-23 14:27:14,403 - trainer - INFO - start training epoch 99
+2022-09-23 14:27:14,404 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,404 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,404 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,408 - trainer - INFO - 
+*****************[epoch: 99, global step: 100] eval training set at end of epoch***************
+2022-09-23 14:27:14,408 - trainer - INFO - {
+  "train_loss": 11.97093391418457
+}
+2022-09-23 14:27:14,408 - trainer - INFO - start training epoch 100
+2022-09-23 14:27:14,409 - trainer - INFO - training using device=cpu
+2022-09-23 14:27:14,409 - trainer - INFO - 
+*************hyperparam_dict**********
+
+2022-09-23 14:27:14,409 - trainer - INFO - {
+  "train_epochs": 100,
+  "eval_batch_size": 64,
+  "train_batch_size": 130,
+  "no_improve_count": 0,
+  "device": "cpu",
+  "patience": 200,
+  "save_path": "model/mlp_yoke",
+  "eval_on": "loss",
+  "eval_every": 2,
+  "use_wandb": false,
+  "loss_fn": "mse",
+  "keep_ck_num": 3,
+  "lr": 0.03
+}
+2022-09-23 14:27:14,412 - trainer - INFO - 
+*****************[epoch: 100, global step: 100] eval training set based on eval_every=2***************
+2022-09-23 14:27:14,412 - trainer - INFO - {
+  "train_loss": 11.96449613571167
+}
+2022-09-23 14:27:14,414 - trainer - INFO - 
+*****************[epoch: 100, global step: 100] eval development set based on eval_every=2***************
+2022-09-23 14:27:14,415 - trainer - INFO - {
+  "dev_loss": 11.870487213134766,
+  "dev_best_score_for_loss": -11.870487213134766
+}
+2022-09-23 14:27:14,415 - trainer - INFO -    save the model with best score so far
+2022-09-23 14:27:14,416 - trainer - INFO -    Check 3 checkpoints already saved
+2022-09-23 14:27:14,416 - trainer - INFO -    There are more than keep_ck_num as specified, then remove the oldest saved checkpoint
+2022-09-23 14:27:14,417 - trainer - INFO -   Remove checkpoint model/mlp_yoke\ck_94
+2022-09-23 14:27:14,418 - trainer - INFO -   Save checkpoint to model/mlp_yoke
+2022-09-23 14:27:14,419 - trainer - INFO - save model to path: model/mlp_yoke
+2022-09-23 14:27:14,420 - trainer - INFO -   no_improve_count: 0
+2022-09-23 14:27:14,420 - trainer - INFO -   patience: 200
+2022-09-23 14:27:14,420 - trainer - INFO -    Check 2 checkpoints already saved
+2022-09-23 14:27:14,420 - trainer - INFO -   Save checkpoint to model/mlp_yoke\ck_100
+2022-09-23 14:27:14,423 - trainer - INFO - save model to path: model/mlp_yoke\ck_100
+2022-09-23 14:27:14,424 - trainer - INFO - 
+*****************[epoch: 100, global step: 101] eval training set at end of epoch***************
+2022-09-23 14:27:14,424 - trainer - INFO - {
+  "train_loss": 11.95805835723877
+}
